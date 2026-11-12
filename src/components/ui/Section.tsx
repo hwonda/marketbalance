@@ -13,6 +13,11 @@ type SectionProps = {
   tone?: "paper" | "mist";
   className?: string;
   headingLevel?: "h2" | "h3";
+  /**
+   * Where the heading sticks on desktop. `subnav` is for pages with a sticky section nav under the header
+   * (72px header + 56px nav), so the heading keeps the same 40px gap below everything that is fixed.
+   */
+  stickBelow?: "header" | "subnav";
 };
 
 /**
@@ -27,6 +32,7 @@ export default function Section({
   tone = "paper",
   className,
   headingLevel = "h2",
+  stickBelow = "header",
 }: SectionProps) {
   const Heading = headingLevel;
   return (
@@ -36,7 +42,7 @@ export default function Section({
     >
       <Container className="grid gap-8 md:grid-cols-12 md:gap-8">
         <div className="md:col-span-4">
-          <div className="md:sticky md:top-28">
+          <div className={cn("md:sticky", stickBelow === "subnav" ? "md:top-[168px]" : "md:top-28")}>
             <Heading className="text-h3 font-bold md:text-h2">{title}</Heading>
             {intro && <div className="mt-4 max-w-[34ch] text-ink-soft">{intro}</div>}
           </div>
