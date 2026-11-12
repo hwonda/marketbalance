@@ -6,9 +6,9 @@ import { cn } from "@/lib/cn";
 
 type Variant = "primary" | "secondary" | "inverse";
 
-/** Orange is reserved for the primary action; ink text on orange keeps contrast above 4.5:1. */
+/** Orange is reserved for the primary action, always with white text. */
 const VARIANTS: Record<Variant, string> = {
-  primary: "bg-orange text-ink hover:bg-orange-deep hover:text-white",
+  primary: "bg-orange text-white hover:bg-orange-deep",
   secondary: "border border-ink/25 text-ink hover:border-ink",
   inverse: "border border-white/40 text-white hover:border-white hover:bg-white/10",
 };
