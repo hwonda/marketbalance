@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, type FocusEvent, type KeyboardEvent } from "react";
 import { usePathname } from "@/i18n/usePathname";
 import { useDictionary } from "@/i18n/I18nProvider";
 import Link from "@/i18n/Link";
@@ -20,6 +20,10 @@ export default function Header() {
   const open = openedOn === pathname;
   const setOpen = (next: boolean) => setOpenedOn(next ? pathname : null);
   const [scrolled, setScrolled] = useState(false);
+  // Desktop dropdowns are driven by state, not :hover/:focus-within, so a click can close them
+  // even though the clicked link keeps keyboard focus.
+  const [dropdown, setDropdown] = useState<string | null>(null);
+  const suppressFocusOpen = useRef(false);
 
   const items: NavItem[] = [
     {
@@ -70,6 +74,18 @@ export default function Header() {
 
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
+  const closeDropdownOnBlur = (event: FocusEvent<HTMLLIElement>) => {
+    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setDropdown(null);
+  };
+  const closeDropdownOnEscape = (event: KeyboardEvent<HTMLLIElement>) => {
+    if (event.key !== "Escape") return;
+    setDropdown(null);
+    // Return focus to the top-level link without reopening the menu it belongs to.
+    suppressFocusOpen.current = true;
+    event.currentTarget.querySelector<HTMLAnchorElement>("a")?.focus();
+    suppressFocusOpen.current = false;
+  };
+
   return (
     <>
       <a
@@ -93,9 +109,20 @@ export default function Header() {
           <nav aria-label={nav.primary} className="hidden h-full lg:block">
             <ul className="flex h-full items-center gap-1">
               {items.map((item) => (
-                <li key={item.href} className="group relative flex h-full items-center">
+                <li
+                  key={item.href}
+                  className="relative flex h-full items-center"
+                  onMouseEnter={() => item.children && setDropdown(item.href)}
+                  onMouseLeave={() => setDropdown(null)}
+                  onFocus={() => {
+                    if (item.children && !suppressFocusOpen.current) setDropdown(item.href);
+                  }}
+                  onBlur={closeDropdownOnBlur}
+                  onKeyDown={closeDropdownOnEscape}
+                >
                   <Link
                     href={item.href}
+                    onClick={() => setDropdown(null)}
                     aria-current={isCurrent(item.href) ? "page" : undefined}
                     className={cn(
                       "relative flex h-full items-center px-3 text-small font-semibold transition-colors",
@@ -106,13 +133,21 @@ export default function Header() {
                     {isCurrent(item.href) && <span className="absolute inset-x-3 bottom-0 h-[3px] bg-blue" />}
                   </Link>
                   {item.children && (
-                    <div className="invisible absolute top-full left-0 pt-2 opacity-0 transition-opacity duration-150 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                    <div
+                      className={cn(
+                        "absolute top-full left-0 pt-2 transition-opacity duration-150",
+                        dropdown === item.href ? "visible opacity-100" : "invisible opacity-0",
+                      )}
+                    >
                       <ul className="min-w-56 rounded-lg border border-line bg-paper py-2 shadow-[0_12px_32px_rgba(32,24,32,0.12)]">
                         {item.children.map((child) => (
                           <li key={child.href}>
                             <Link
                               href={child.href}
-                              onClick={notifyHashNav}
+                              onClick={() => {
+                                setDropdown(null);
+                                notifyHashNav();
+                              }}
                               className="block px-4 py-2.5 text-small text-ink-soft transition-colors hover:bg-mist hover:text-ink"
                             >
                               {child.label}
