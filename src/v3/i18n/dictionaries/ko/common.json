@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "title": "마켓발란스㈜ | 글로벌 비즈니스 파트너",
+    "description": "해외전시, 수출마케팅, 바이어 발굴 및 비즈니스 행사 기획 전문 글로벌 파트너 마켓발란스㈜입니다.",
+    "ogTitle": "마켓발란스㈜ | 글로벌 비즈니스 통합 지원",
+    "twitterTitle": "마켓발란스㈜",
+    "twitterDescription": "글로벌 비즈니스의 성공적인 파트너, 마켓발란스㈜입니다.",
+    "siteName": "마켓발란스㈜",
+    "appName": "마켓발란스",
+    "logoAlt": "마켓발란스 로고"
+  },
+  "nav": {
+    "about": "ABOUT",
+    "aboutIntro": "회사소개",
+    "aboutHistory": "연혁",
+    "service": "SERVICE",
+    "serviceExhibition": "해외전시회 참가대행 서비스",
+    "serviceMarketing": "중소기업 수출마케팅",
+    "serviceMice": "비즈니스 행사기획·운영",
+    "serviceBuyer": "수출 컨설팅",
+    "serviceTrade": "유럽 진출 지원",
+    "portfolio": "PORTFOLIO",
+    "portfolioWorks": "주요 사업 실적",
+    "contact": "CONTACT",
+    "contactLocation": "위치",
+    "contactBrochure": "문의 안내",
+    "qna": "INQUIRY",
+    "qnaInquiry": "문의하기",
+    "buyerMatching": "BUYER MATCHING",
+    "notice": "공지사항"
+  },
+  "footer": {
+    "description": "마켓발란스(주)는 실질적인 현장 감각과 글로벌 네트워크를 결합하여 당신의 비즈니스가 세계 시장에서 가장 안정적이고 혁신적으로 도약할 수 있도록 전략적 균형과 성과를 제공합니다.",
+    "addressLine1": "경기도 안양시 동안구 시민대로 398, 911호",
+    "addressLine2": "인덕원역 더리브디하우트",
+    "businessInfo": "대표: 이수연",
+    "structure": "Structure",
+    "expertise": "Expertise",
+    "collective": "Collective",
+    "contactDetails": "오시는 길 보기",
+    "structureLinks": [
+      "Home",
+      "About Us",
+      "Service",
+      "Portfolio",
+      "Inquiry"
+    ],
+    "expertiseLinks": [
+      "Business Event",
+      "Marketing",
+      "Exhibition",
+      "Export Consulting",
+      "Europe Entry"
+    ],
+    "phoneLabel": "대표 전화",
+    "phone": "031-425-9281",
+    "email": "marketbalancekorea@gmail.com",
+    "emailLabel": "이메일 보내기",
+    "sns": {
+      "blog": "마켓발란스 공식 블로그",
+      "linkedin": "마켓발란스 링크드인",
+      "instagram": "마켓발란스 인스타그램",
+      "youtube": "마켓발란스 유튜브",
+      "pending": "준비 중"
+    }
+  },
+  "cta": {
+    "consult": "무료 상담 신청",
+    "works": "실적 보기"
+  },
+  "languageSwitcher": {
+    "label": "언어 선택",
+    "options": {
+      "ko": {
+        "name": "한국어",
+        "code": "KOR"
+      },
+      "en": {
+        "name": "English",
+        "code": "ENG"
+      }
+    }
+  },
+  "common": {
+    "menuOpen": "메뉴 열기",
+    "menuClose": "메뉴 닫기",
+    "home": "HOME"
+  }
+}

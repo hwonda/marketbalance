@@ -17,7 +17,8 @@ export const LocationMap = dynamic(() => import("./LocationMapImpl"), {
   loading: () => <div className="h-[360px] w-full rounded-lg border border-line bg-mist md:h-[480px]" />,
 });
 
-export type { NetworkMapProps } from "./NetworkMapImpl";
+export type { NetworkMapPalette, NetworkMapProps } from "./NetworkMapImpl";
 export type { LocationMapProps } from "./LocationMapImpl";
-export type { RegionKey } from "./networkData";
+export type { NetworkRegion, RegionKey } from "./networkData";
+export { NETWORK_REGIONS } from "./networkData";
 export { OFFICE } from "./officeLocation";

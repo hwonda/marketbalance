@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "회사소개",
+    "description": "마켓발란스(주)는 국내외 현장 경험을 갖춘 전문인력이 해외전시, 수출마케팅, 바이어 발굴·매칭을 수행하는 글로벌 비즈니스 파트너입니다."
+  },
+  "breadcrumbLabel": "현재 위치",
+  "breadcrumbCurrent": "About Us",
+  "hero": {
+    "label": "페이지 헤더",
+    "eyebrow": "Collective Intelligence",
+    "titleLine1": "Beyond the",
+    "titleHighlight": "Balance.",
+    "description": [
+      "마켓발란스(주)는 단순한 해외 마케팅 대행을 넘어,",
+      "당신의 비즈니스가 글로벌 시장에서 가장 완벽한 균형점을 찾도록 돕습니다."
+    ]
+  },
+  "intro": {
+    "label": "회사 소개",
+    "eyebrow": "Company",
+    "title": "회사 소개",
+    "body": [
+      {
+        "text": "마켓발란스㈜",
+        "bold": true
+      },
+      {
+        "text": "는 국내외 각 분야에서 실질적인 현장감각을 익힌 전문인력들이 전시회는 물론 시장조사, 수출상담, 바이어 발굴 매칭, 컨퍼런스, 투자설명회, 로드쇼, 해외마케팅 컨설팅 등을 진행하고 있습니다. 해외 마케팅 기획에서 예산, 진행에 이르기까지 고객을 향해 열린 마음으로 ",
+        "bold": false
+      },
+      {
+        "text": "최고의 해외 마케팅 파트너",
+        "bold": true
+      },
+      {
+        "text": "로 끝까지 함께합니다.",
+        "bold": false
+      }
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "body": [
+      {
+        "text": "고객과 소통, 공감, 유대를 통해 우리와 함께 하는 사람들의 ",
+        "bold": false
+      },
+      {
+        "text": "꿈과 추구하는 가치에 집중합니다.",
+        "bold": true
+      }
+    ]
+  },
+  "vision": {
+    "title": "Vision",
+    "body": [
+      {
+        "text": "우리는 고객이 원하는 방향으로 고객의 제품과 서비스의 ",
+        "bold": false
+      },
+      {
+        "text": "성공적인 글로벌 시장 진출",
+        "bold": true
+      },
+      {
+        "text": "을 위해 끊임없이 전문성을 발전시키고 서비스를 혁신해 나갑니다.",
+        "bold": false
+      }
+    ]
+  },
+  "coreServices": {
+    "title": "Core Services",
+    "tags": [
+      "#해외전시참가",
+      "#수출상담",
+      "#바이어 발굴·매칭",
+      "#컨퍼런스",
+      "#투자설명회",
+      "#로드쇼",
+      "#해외마케팅 컨설팅"
+    ]
+  },
+  "strengths": {
+    "label": "핵심 역량",
+    "eyebrow": "Key Strengths",
+    "title": "핵심 역량",
+    "subtitle": "What makes us different",
+    "items": [
+      {
+        "num": "20",
+        "unit": "년",
+        "label": "20년 이상의 풍부한 실질적 경력",
+        "desc": "수출마케팅, 전시·컨벤션 분야 대표자의 풍부한 업계 경력을 바탕으로 독창적인 노하우와 문제 해결 능력을 보유하고 있습니다."
+      },
+      {
+        "num": "10",
+        "unit": "년+",
+        "label": "해외마케팅 최적화 전문 인력",
+        "desc": "최소 10년 이상 MICE 분야 현장 실무경험과 글로벌 감각을 완벽히 갖춘 전문 인력으로 전담 팀을 구성하여 운영합니다."
+      },
+      {
+        "num": "20",
+        "unit": "+",
+        "label": "광범위한 글로벌 네트워크",
+        "desc": "미주, 유럽, 중국, 베트남 등 전세계 20여개국 네트워크를 통해 각 국가별 시장 특성에 맞는 최적의 맞춤형 전략을 제시합니다."
+      },
+      {
+        "num": "20",
+        "unit": "+",
+        "label": "차별화된 국제행사 기획력",
+        "desc": "해외바이어 초청, 수출상담회, 시장개척단 등 연간 20개 이상의 대규모 국제행사를 완벽하게 기획하고 성공적으로 운영합니다."
+      },
+      {
+        "num": "多",
+        "unit": "",
+        "label": "정교한 바이어 발굴·매칭",
+        "desc": "ICT, 바이오, 재생에너지 등 첨단 산업 분야의 유력 바이어를 정교하게 타겟팅하여 높은 성사율의 비즈니스 매칭을 수행합니다."
+      }
+    ]
+  },
+  "history": {
+    "label": "연혁",
+    "eyebrow": "History",
+    "title": "연혁"
+  },
+  "network": {
+    "label": "글로벌 네트워크",
+    "eyebrow": "Global Network",
+    "title": "글로벌 네트워크",
+    "description": "중국, 동남아, 러시아, 인도, 미주 지역본부 보유 및 해외 주요마켓 마케팅 전문사와의 강력한 네트워크를 통해 더 나은 서비스를 지향합니다.",
+    "mapAlt": "마켓발란스 글로벌 네트워크 지도: 아시아, 유럽, 중동, CIS, 북미, 오세아니아",
+    "headOffice": "본사",
+    "listTitle": "Network",
+    "mapLabels": {
+      "asia": "아시아",
+      "europe": "유럽",
+      "middleEast": "중동",
+      "cis": "CIS",
+      "northAmerica": "북미",
+      "oceania": "오세아니아"
+    },
+    "regions": [
+      {
+        "key": "europe",
+        "name": "유럽 어권",
+        "countries": "독일, 폴란드"
+      },
+      {
+        "key": "northAmerica",
+        "name": "북미 어권",
+        "countries": "미국, 캐나다"
+      },
+      {
+        "key": "oceania",
+        "name": "오세아니아",
+        "countries": "호주"
+      },
+      {
+        "key": "cis",
+        "name": "CIS",
+        "countries": "러시아, 우즈베키스탄"
+      },
+      {
+        "key": "middleEast",
+        "name": "중동 어권",
+        "countries": "UAE, 튀르키예"
+      },
+      {
+        "key": "asia",
+        "name": "아시아 어권",
+        "countries": "중국, 홍콩, 싱가포르, 베트남, 태국, 대만, 인도, 말레이시아, 인도네시아"
+      }
+    ]
+  },
+  "cta": {
+    "highlight": "About Us",
+    "titleLead": "마켓발란스와 함께",
+    "titleHighlight": "글로벌 시장",
+    "titleTail": "의",
+    "titleLine2": "새로운 균형을 경험하세요.",
+    "description": "축적된 데이터와 전문 인력을 통해 귀사의 성공적인 해외 진출을 위한 가교 역할을 성실히 수행하겠습니다."
+  }
+}

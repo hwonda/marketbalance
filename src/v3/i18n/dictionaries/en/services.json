@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Services",
+    "description": "Business event planning, SME export marketing, overseas exhibition agency, export consulting and Europe market entry support from Market Balance."
+  },
+  "aria": {
+    "pageHeader": "Page header",
+    "breadcrumb": "Breadcrumb",
+    "tabs": "Jump to a service",
+    "arrow": "Next step"
+  },
+  "breadcrumb": "Services",
+  "hero": {
+    "eyebrow": "Global Operations",
+    "titleLine1": "Our",
+    "titleLine2": "Specialization.",
+    "descLines": [
+      "We look past conventional marketing and focus on real results.",
+      "Discover the export solutions only Market Balance can deliver."
+    ]
+  },
+  "tabs": {
+    "industries": "Key Industries",
+    "mice": "Business Events",
+    "marketing": "SME Export Marketing",
+    "exhibition": "Overseas Exhibition Agency",
+    "buyer": "Export Consulting",
+    "trade": "Europe Market Entry"
+  },
+  "labels": {
+    "coreBusiness": "Core business —",
+    "serviceContent": "What we do",
+    "process": "How it works",
+    "exhibitions": "Key exhibitions",
+    "categories": "Target industries",
+    "supportServices": "Support services"
+  },
+  "industries": {
+    "eyebrow": "Key Industries",
+    "title": "Key Industries",
+    "items": [
+      {
+        "label": "Environment",
+        "name": "Environment"
+      },
+      {
+        "label": "Renewable Energy",
+        "name": "Renewable Energy"
+      },
+      {
+        "label": "IT / SW / AI",
+        "name": "Digital Technology"
+      },
+      {
+        "label": "Mobility",
+        "name": "Mobility"
+      },
+      {
+        "label": "Medical Appliances",
+        "name": "Medical Devices"
+      },
+      {
+        "label": "Consumer Goods",
+        "name": "Consumer Goods (Food, Cosmetics, etc.)"
+      }
+    ]
+  },
+  "mice": {
+    "eyebrow": "Event Management",
+    "title": "Business Event Planning & Operation",
+    "intro": "We run conferences, roadshows, seminars and corporate events for public bodies and companies in Korea and abroad, from planning and operation to follow-up.",
+    "note": "We bring in specialist Korean agencies when the event needs them.",
+    "cards": [
+      {
+        "title": "Planning & setup",
+        "desc": "Event strategy through to market development missions"
+      },
+      {
+        "title": "Business meetings",
+        "desc": "Meetings with invited overseas buyers, with interpreting"
+      },
+      {
+        "title": "Events & channels",
+        "desc": "Roadshows, seminars and links to retail channels"
+      }
+    ],
+    "steps": [
+      "Planning & strategy",
+      "Programme design",
+      "Event management",
+      "On-site operation",
+      "Results & reporting"
+    ]
+  },
+  "marketing": {
+    "eyebrow": "Targeted Marketing",
+    "title": "SME Export Marketing",
+    "intro": "Working with government and export support agencies, we run export marketing programmes for key global markets, including export meetings, trade missions, online and offline marketing and PR.",
+    "note": "We also run MICE projects when public bodies need them.",
+    "cards": [
+      {
+        "title": "Market research",
+        "desc": "Analyse target markets and assess export potential"
+      },
+      {
+        "title": "Entry strategy",
+        "desc": "Localisation, pricing and an execution roadmap"
+      },
+      {
+        "title": "Buyer sourcing",
+        "desc": "Verify demand from our buyer database, then match 1:1"
+      },
+      {
+        "title": "Marketing execution",
+        "desc": "Trade fairs, export meetings and online B2B promotion"
+      },
+      {
+        "title": "Contracts & results",
+        "desc": "Trade paperwork, contract signing and follow-up"
+      }
+    ]
+  },
+  "exhibition": {
+    "eyebrow": "Strategic Exhibition",
+    "title": "Overseas Exhibition Agency",
+    "intro": "Working with overseas organisers, we handle Korean companies' exhibition participation for them: booth rental, stand building, shipping and exhibition marketing.",
+    "note": "We find and run promising overseas trade fairs for public bodies.",
+    "cards": [
+      {
+        "title": "Strategy & analysis",
+        "desc": "Government support, Korea pavilions and fair selection"
+      },
+      {
+        "title": "Registration & ops",
+        "desc": "Booth rental, exhibitor registration, organiser liaison"
+      },
+      {
+        "title": "Marketing & events",
+        "desc": "Pre/post-show marketing, on-site promotion, results"
+      }
+    ],
+    "steps": [
+      "Fair information & selection",
+      "Booth application",
+      "Manual registration & preparation",
+      "On-site support (by agreement)"
+    ],
+    "exhibitions": [
+      {
+        "title": "IE EXPO China",
+        "desc": "Shanghai, China"
+      },
+      {
+        "title": "IE EXPO Chengdu",
+        "desc": "Chengdu, China"
+      },
+      {
+        "title": "IE EXPO Shenzhen",
+        "desc": "Shenzhen, China"
+      },
+      {
+        "title": "WETEX",
+        "desc": "Water, Energy, Technology and Environment Exhibition, Dubai"
+      }
+    ]
+  },
+  "buyer": {
+    "eyebrow": "Export Consulting",
+    "title": "Export Consulting",
+    "intro": "For exhibitors and export-marketing participants, we provide ongoing export support from buyer sourcing and matching to market research and export contracts.",
+    "note": "Tailored business matching aimed at real results between Korean and overseas companies.",
+    "cards": [
+      {
+        "title": "Export groundwork",
+        "desc": "Market research and a buyer targeting strategy"
+      },
+      {
+        "title": "Real matching",
+        "desc": "Verify local demand, then 1:1 meetings with interpreting"
+      },
+      {
+        "title": "Contract & follow-up",
+        "desc": "Contract signing, shipping and follow-up meetings"
+      }
+    ]
+  },
+  "trade": {
+    "eyebrow": "Europe Market Entry",
+    "title": "Europe Market Entry Support",
+    "intro": "We take cosmetics and medical device companies into Europe, from export consulting and certification to buyer matching, contracts and trade operations.",
+    "categories": [
+      "Cosmetics (beauty)",
+      "Medical devices"
+    ],
+    "cards": [
+      {
+        "title": "Export consulting",
+        "desc": "Entry strategy and export readiness for Europe"
+      },
+      {
+        "title": "EU certification",
+        "desc": "Product certification and registration in Europe"
+      },
+      {
+        "title": "Buyer matching",
+        "desc": "Find European buyers and set up 1:1 meetings"
+      },
+      {
+        "title": "Contract support",
+        "desc": "Negotiate terms and sign export contracts"
+      },
+      {
+        "title": "Trade operations",
+        "desc": "Shipping, customs and other export paperwork"
+      }
+    ]
+  },
+  "cta": {
+    "highlight": "Our Services",
+    "titleLead": "Discover",
+    "titleHighlight": "tailored global",
+    "titleMid": "expansion",
+    "titleTail": "solutions for your business.",
+    "description": "Raise your business to the next level with export solutions only Market Balance can deliver."
+  }
+}

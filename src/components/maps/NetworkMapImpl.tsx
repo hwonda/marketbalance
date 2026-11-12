@@ -18,6 +18,7 @@ import {
   KOREA_ID,
   NETWORK_EXTENT_LONLAT,
   NETWORK_REGIONS,
+  type NetworkRegion,
   type RegionKey,
 } from "./networkData";
 
@@ -28,9 +29,23 @@ export type NetworkMapProps = {
   headOfficeLabel: string;
   /** Text alternative describing what the map shows. */
   ariaLabel: string;
+  /** Regions to draw; defaults to the shared NETWORK_REGIONS. */
+  regions?: NetworkRegion[];
+  /** Colours; defaults to the redesign palette. */
+  palette?: Partial<NetworkMapPalette>;
 };
 
-const COLORS = {
+export type NetworkMapPalette = {
+  land: string;
+  border: string;
+  network: string;
+  korea: string;
+  route: string;
+  hub: string;
+  ink: string;
+};
+
+const DEFAULT_PALETTE: NetworkMapPalette = {
   land: "#e5e2e5",
   border: "#ffffff",
   network: "#bcdcf0",
@@ -99,14 +114,21 @@ function arc(from: number[], to: number[], segments = 48) {
   return new LineString(points);
 }
 
-export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: NetworkMapProps) {
+export default function NetworkMapImpl({
+  labels,
+  headOfficeLabel,
+  ariaLabel,
+  regions = NETWORK_REGIONS,
+  palette,
+}: NetworkMapProps) {
   const target = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!target.current) return;
     let cancelled = false;
 
-    const networkIds = new Set(NETWORK_REGIONS.flatMap((r) => r.countries));
+    const COLORS = { ...DEFAULT_PALETTE, ...palette };
+    const networkIds = new Set(regions.flatMap((r) => r.countries));
     const countryStyle = (feature: FeatureLike) => {
       const id = String(feature.getId());
       const fill = id === KOREA_ID ? COLORS.korea : networkIds.has(id) ? COLORS.network : COLORS.land;
@@ -120,7 +142,7 @@ export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: N
     const overlay = new VectorSource({ wrapX: false });
     const office = fromLonLat([HEAD_OFFICE.lon, HEAD_OFFICE.lat]);
 
-    for (const region of NETWORK_REGIONS) {
+    for (const region of regions) {
       overlay.addFeature(
         new Feature({
           geometry: arc(office, fromLonLat([region.anchor.lon, region.anchor.lat])),
@@ -243,6 +265,7 @@ export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: N
       map.setTarget(undefined);
       map.dispose();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- palette/regions are static per page
   }, [labels, headOfficeLabel]);
 
   return (

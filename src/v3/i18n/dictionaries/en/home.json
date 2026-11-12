@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Global Business Partner",
+    "description": "Market Balance Co., Ltd. is a global partner for overseas exhibitions, export marketing, buyer sourcing and business event planning."
+  },
+  "hero": {
+    "label": "TOTAL MARKETING SOLUTION",
+    "titleLead": "Find Your ",
+    "titleHighlight": "Balance",
+    "titleLine2": "in Global Markets.",
+    "introLine1": "From trade fairs to buyer sourcing and export marketing.",
+    "introLine2": "We are with you from planning to results.",
+    "primary": "Contact us",
+    "secondary": "Explore services",
+    "imageAlt": "An overseas trade fair hall"
+  },
+  "quick": {
+    "label": "Quick links",
+    "items": [
+      "Contact us",
+      "Business events",
+      "SME export marketing",
+      "Exhibition agency",
+      "Export consulting",
+      "Location"
+    ]
+  },
+  "stats": {
+    "eyebrow": "PERFORMANCE",
+    "title": "Market Balance in numbers",
+    "items": [
+      {
+        "value": "17",
+        "unit": "",
+        "label": "Projects delivered"
+      },
+      {
+        "value": "1,000+",
+        "unit": "",
+        "label": "Korean companies taken part"
+      },
+      {
+        "value": "500+",
+        "unit": "",
+        "label": "Buyers on our list"
+      },
+      {
+        "value": "3,000+",
+        "unit": "",
+        "label": "Business meetings held"
+      }
+    ],
+    "basis": "As of 2026"
+  },
+  "services": {
+    "eyebrow": "OUR SERVICES",
+    "title": "What we do",
+    "more": "Learn more",
+    "items": [
+      {
+        "title": "Business Event Planning & Operation",
+        "desc": "End-to-end support for conferences, roadshows, seminars and corporate events for public bodies and companies — from planning and operation to follow-up."
+      },
+      {
+        "title": "SME Export Marketing",
+        "desc": "Marketing that strengthens SMEs' global competitiveness, including online channels and the digital transformation (DX) of export operations."
+      },
+      {
+        "title": "Overseas Exhibition Agency",
+        "desc": "We handle your overseas exhibition from start to finish — booth rental, stand building, shipping and exhibition marketing, plus government support and national pavilions."
+      },
+      {
+        "title": "Export Consulting",
+        "desc": "Systematic, ongoing export support for exhibitors and export-marketing participants, from buyer sourcing and matching to market research and export contracts."
+      },
+      {
+        "title": "Europe Market Entry",
+        "desc": "For cosmetics (beauty) and medical device companies entering Europe: export consulting, European certification, buyer sourcing and matching, contract support and trade agency."
+      }
+    ]
+  },
+  "news": {
+    "eyebrow": "NEWS",
+    "title": "Event reviews & news",
+    "blogCta": "Visit our blog",
+    "pending": "Coming soon",
+    "tabsLabel": "News type",
+    "tabs": {
+      "blog": "Blog",
+      "notice": "Notices"
+    },
+    "viewAll": "View all",
+    "newWindow": "opens in a new window"
+  },
+  "banner": {
+    "eyebrow": "Ready to Scale",
+    "titleLead": "Set the",
+    "titleHighlight": "global standard",
+    "titleTail": "",
+    "titleLine2": "with Market Balance.",
+    "desc": "With accumulated data and expert talent, we will faithfully serve as your bridge to successful overseas expansion."
+  }
+}

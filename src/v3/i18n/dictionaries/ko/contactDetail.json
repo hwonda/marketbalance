@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "오시는 길",
+    "description": "마켓발란스㈜의 주소, 연락처, 회사 정보와 오시는 길을 확인하세요."
+  },
+  "hero": {
+    "ariaLabel": "페이지 헤더",
+    "eyebrow": "Connect with us",
+    "titleLine1": "Contact",
+    "titleLine2": "Balance.",
+    "introLine1": "비즈니스의 경계를 넘어 글로벌 시장으로 나아가는 길,",
+    "introLine2": "마켓발란스가 완벽한 파트너가 되어 드립니다."
+  },
+  "breadcrumb": {
+    "ariaLabel": "현재 위치",
+    "current": "Contact"
+  },
+  "companyInfo": {
+    "eyebrow": "Company Info",
+    "title": "오시는 길 및 회사정보",
+    "cards": {
+      "company": {
+        "label": "회사명",
+        "value": "마켓발란스(주)",
+        "sub": "Market Balance Co., Ltd."
+      },
+      "ceo": {
+        "label": "대표자명",
+        "value": "이수연",
+        "sub": "LEE SU YEON"
+      },
+      "registration": {
+        "label": "기업 정보",
+        "value": "설립일: 2024년 10월"
+      },
+      "phone": {
+        "label": "연락처",
+        "value": "031-425-9281"
+      },
+      "email": {
+        "label": "이메일",
+        "value": "marketbalancekorea@gmail.com",
+        "sub": "Official Contact"
+      },
+      "address": {
+        "label": "주소",
+        "value": "안양시 동안구 시민대로 398",
+        "sub": "더리브디하우트 911호"
+      }
+    }
+  },
+  "location": {
+    "title": "Location Map.",
+    "addressLabel": "주소",
+    "addressLine": "안양시 동안구 시민대로 398, 911호",
+    "addressDetail": "(평촌동, 인덕원역 더리브디하우트)",
+    "transitLabel": "대중교통",
+    "transitStation": "인덕원역 4번 출구",
+    "transitWalk": "도보 약 10분",
+    "phoneLabel": "전화",
+    "phone": "031-425-9281",
+    "naverMap": "네이버 지도에서 보기",
+    "newTab": "새 창에서 열림",
+    "map": {
+      "officeName": "마켓발란스㈜",
+      "officeDetail": "더리브디하우트 911호",
+      "stationLabel": "인덕원역 4번 출구",
+      "zoomIn": "지도 확대",
+      "zoomOut": "지도 축소",
+      "gestureHint": "Ctrl(맥은 ⌘)을 누른 채 스크롤하면 확대되고, 휴대폰에서는 두 손가락으로 움직일 수 있습니다.",
+      "ariaLabel": "마켓발란스 위치 지도: 인덕원역 4번 출구에서 도보 약 10분, 더리브디하우트 911호"
+    }
+  },
+  "cta": {
+    "highlight": "Get in Touch",
+    "titleLead": "글로벌 시장 진출의",
+    "titleHighlight": "첫 걸음",
+    "titleAfterHighlight": ", ",
+    "titleTail": "지금 바로 상담하세요.",
+    "description": "궁금하신 점이나 상담이 필요하시면 언제든 편하게 문의해 주시기 바랍니다."
+  },
+  "contactUs": {
+    "sectionNumber": "02",
+    "eyebrow": "CONTACT US",
+    "tag": "INQUIRY",
+    "title": "궁금한 점이 있으신가요?",
+    "description": "서비스와 진행 절차, 견적 등 궁금한 점은 편하게 문의해 주세요. 담당자가 확인 후 안내드립니다.",
+    "button": "문의하기",
+    "phoneLabel": "전화 문의",
+    "phone": "031-425-9281"
+  }
+}

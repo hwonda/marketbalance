@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Notices",
+    "description": "Announcements from Market Balance Co., Ltd."
+  },
+  "eyebrow": "NOTICE",
+  "title": "Notices",
+  "lead": "News and announcements from Market Balance.",
+  "breadcrumbHome": "HOME",
+  "pinned": "Pinned",
+  "empty": "There are no notices yet.",
+  "back": "Back to list",
+  "prev": "Previous page",
+  "next": "Next page",
+  "page": "Page {page}",
+  "columns": {
+    "title": "Title",
+    "date": "Date"
+  }
+}

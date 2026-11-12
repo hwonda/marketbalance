@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "title": "Market Balance Co., Ltd. | Global Business Partner",
+    "description": "Market Balance is a global partner for overseas exhibitions, export marketing, buyer sourcing and business event planning.",
+    "ogTitle": "Market Balance Co., Ltd. | Integrated Global Business Support",
+    "twitterTitle": "Market Balance Co., Ltd.",
+    "twitterDescription": "Market Balance — your partner for success in global business.",
+    "siteName": "Market Balance Co., Ltd.",
+    "appName": "Market Balance",
+    "logoAlt": "Market Balance logo"
+  },
+  "nav": {
+    "about": "ABOUT",
+    "aboutIntro": "Company",
+    "aboutHistory": "History",
+    "service": "SERVICE",
+    "serviceExhibition": "Overseas Exhibition Agency",
+    "serviceMarketing": "SME Export Marketing",
+    "serviceMice": "Business Events",
+    "serviceBuyer": "Export Consulting",
+    "serviceTrade": "Europe Market Entry",
+    "portfolio": "PORTFOLIO",
+    "portfolioWorks": "Track Record",
+    "contact": "CONTACT",
+    "contactLocation": "Location",
+    "contactBrochure": "Get in Touch",
+    "qna": "INQUIRY",
+    "qnaInquiry": "Inquiry",
+    "buyerMatching": "BUYER MATCHING",
+    "notice": "Notices"
+  },
+  "footer": {
+    "description": "Market Balance combines hands-on field experience with a global network, delivering the strategic balance and results your business needs to grow steadily and boldly in the world market.",
+    "addressLine1": "#911, 398 Simin-daero, Dongan-gu, Anyang-si, Gyeonggi-do, Korea",
+    "addressLine2": "The Live D-Haute, Indeogwon Station",
+    "businessInfo": "CEO: Lee Su Yeon",
+    "structure": "Structure",
+    "expertise": "Expertise",
+    "collective": "Collective",
+    "contactDetails": "View our contact details",
+    "structureLinks": [
+      "Home",
+      "About Us",
+      "Service",
+      "Portfolio",
+      "Inquiry"
+    ],
+    "expertiseLinks": [
+      "Business Event",
+      "Marketing",
+      "Exhibition",
+      "Export Consulting",
+      "Europe Entry"
+    ],
+    "phoneLabel": "Office",
+    "phone": "+82-31-425-9281",
+    "email": "marketbalancekorea@gmail.com",
+    "emailLabel": "Send an email",
+    "sns": {
+      "blog": "Market Balance official blog",
+      "linkedin": "Market Balance on LinkedIn",
+      "instagram": "Market Balance on Instagram",
+      "youtube": "Market Balance on YouTube",
+      "pending": "Coming soon"
+    }
+  },
+  "cta": {
+    "consult": "Free Consultation",
+    "works": "View Track Record"
+  },
+  "languageSwitcher": {
+    "label": "Select language",
+    "options": {
+      "ko": {
+        "name": "한국어",
+        "code": "KOR"
+      },
+      "en": {
+        "name": "English",
+        "code": "ENG"
+      }
+    }
+  },
+  "common": {
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "home": "HOME"
+  }
+}

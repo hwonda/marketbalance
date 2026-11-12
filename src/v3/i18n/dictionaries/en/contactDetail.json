@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Contact & Location",
+    "description": "Market Balance's address, contact details, company information and directions."
+  },
+  "hero": {
+    "ariaLabel": "Page header",
+    "eyebrow": "Connect with us",
+    "titleLine1": "Contact",
+    "titleLine2": "Balance.",
+    "introLine1": "On your way beyond borders into global markets,",
+    "introLine2": "Market Balance will be the partner you can count on."
+  },
+  "breadcrumb": {
+    "ariaLabel": "Breadcrumb",
+    "current": "Contact"
+  },
+  "companyInfo": {
+    "eyebrow": "Company Info",
+    "title": "Location & Company Information",
+    "cards": {
+      "company": {
+        "label": "Company",
+        "value": "Market Balance Co., Ltd.",
+        "sub": "마켓발란스(주)"
+      },
+      "ceo": {
+        "label": "CEO",
+        "value": "Lee Su Yeon",
+        "sub": "Chief Executive Officer"
+      },
+      "registration": {
+        "label": "Company Details",
+        "value": "Founded: October 2024"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "031-425-9281"
+      },
+      "email": {
+        "label": "Email",
+        "value": "marketbalancekorea@gmail.com",
+        "sub": "Official Contact"
+      },
+      "address": {
+        "label": "Address",
+        "value": "398 Simin-daero, Dongan-gu, Anyang",
+        "sub": "#911, The Live D-Haute"
+      }
+    }
+  },
+  "location": {
+    "title": "Location Map.",
+    "addressLabel": "Address",
+    "addressLine": "#911, 398 Simin-daero, Dongan-gu, Anyang-si",
+    "addressDetail": "(Pyeongchon-dong, The Live D-Haute, Indeogwon Station)",
+    "transitLabel": "Public transport",
+    "transitStation": "Indeogwon Station, Exit 4",
+    "transitWalk": "About a 10-minute walk",
+    "phoneLabel": "Phone",
+    "phone": "+82-31-425-9281",
+    "naverMap": "View on Naver Map",
+    "newTab": "opens in a new tab",
+    "map": {
+      "officeName": "Market Balance Co., Ltd.",
+      "officeDetail": "The Live D-Haute, #911",
+      "stationLabel": "Indeogwon Stn. Exit 4",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "gestureHint": "Hold Ctrl (⌘ on Mac) while scrolling to zoom. On a phone, move the map with two fingers.",
+      "ariaLabel": "Map of Market Balance: about a 10-minute walk from Indeogwon Station exit 4, The Live D-Haute #911"
+    }
+  },
+  "cta": {
+    "highlight": "Get in Touch",
+    "titleLead": "Take the",
+    "titleHighlight": "first step",
+    "titleAfterHighlight": " into global markets — ",
+    "titleTail": "talk to us today.",
+    "description": "If you have any questions or need a consultation, feel free to reach out anytime."
+  },
+  "contactUs": {
+    "sectionNumber": "02",
+    "eyebrow": "CONTACT US",
+    "tag": "INQUIRY",
+    "title": "Have a question?",
+    "description": "Ask us anything about our services, process or pricing. We'll review it and get back to you.",
+    "button": "Contact us",
+    "phoneLabel": "Call us",
+    "phone": "+82-31-425-9281"
+  }
+}

@@ -1,0 +1,125 @@
+/* v3 (served at /v3/ko, /v3/en): the original site with the client's change requests. Only scan this version's code. */
+@import "tailwindcss" source("./");
+/* Classes used by the v3 root layout in src/app/(v3), which is outside the scanned folder. */
+@source inline("min-h-screen flex flex-col font-sans flex-grow");
+
+@theme {
+  --font-sans: "Inter", "Noto Sans KR", sans-serif;
+  --font-display: "Space Grotesk", "Noto Sans KR", sans-serif;
+  /* Client palette (change request §2): titles navy, accent blue, section ground, body grey. */
+  --color-navy: #14213D;
+  /* Kept under its v1 name so existing classes switch over; it is the accent blue, not orange. */
+  --color-brand-orange: #1F5FE0;
+  --color-accent: #1F5FE0;
+  --color-section: #F6F8FC;
+  --color-body: #4A5873;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-white);
+    font-family: var(--font-sans);
+    color: #4A5873;
+    word-break: keep-all;
+    overflow-x: hidden;
+  }
+}
+
+:root {
+  --navy: #14213D;
+  --navy-light: #14213D;
+  --green: #2d7a5f;
+  --orange: #1F5FE0;
+  --blue: #1F5FE0;
+  --paper: #f5f2ed;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
+@keyframes shimmer {
+  0% {
+    transform: translate(-100%, -100%) rotate(45deg);
+  }
+  to {
+    transform: translate(100%, 100%) rotate(45deg);
+  }
+}
+@keyframes sparkle {
+  0%,
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+@keyframes float {
+  0%,
+  to {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes glow-red {
+  0%,
+  to {
+    filter: drop-shadow(0 0 5px #1F5FE04d);
+    opacity: 0.15;
+    transform: translate(-50%, -50%) scale(2.8);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px #1F5FE0b3);
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
+@keyframes pulse-glow-red {
+  0%,
+  to {
+    filter: drop-shadow(0 0 6px #1F5FE080);
+    opacity: 0.95;
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #1F5FE0cc);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+@keyframes border-glow-red {
+  0%,
+  to {
+    border-color: #1F5FE066;
+    box-shadow: 0 0 12px #1F5FE026;
+  }
+  50% {
+    border-color: #1F5FE0cc;
+    box-shadow: 0 0 25px #1F5FE066;
+  }
+}
+@keyframes card-shine {
+  0% {
+    transform: translate(-150%) skew(-30deg);
+  }
+  20%,
+  to {
+    transform: translate(150%) skew(-30deg);
+  }
+}
