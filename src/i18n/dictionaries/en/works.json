@@ -1,84 +1,53 @@
 {
   "meta": {
-    "title": "Portfolio",
-    "description": "Market Balance's track record of overseas exhibitions, export business meetings, seminars and other key projects."
+    "title": "Track record",
+    "description": "Overseas exhibitions, export business meetings, market development missions and seminars delivered by Market Balance in 2025."
   },
-  "hero": {
-    "ariaLabel": "Page header",
-    "eyebrow": "Portfolio & Performance",
-    "titleLine1": "Our",
-    "titleLine2": "Success Cases.",
-    "descLine1": "We openly share the projects Market Balance has delivered and the results they achieved.",
-    "descLine2": "Explore our work across environment, energy, IT and many other industries."
+  "intro": {
+    "title": "Track record",
+    "lead": "{count} projects delivered in 2025. Filter them to see overseas exhibitions, business meetings, market missions and seminars."
   },
-  "breadcrumb": {
-    "ariaLabel": "Breadcrumb",
-    "current": "Portfolio"
-  },
-  "record": {
-    "eyebrow": "Performance",
-    "title": "Business Record",
-    "descLead": "Proof of global business success and lasting partnerships:",
-    "descEmphasis": "Market Balance's key projects.",
-    "fiscalYear": "FY 2025",
-    "currentProjects": "Current Projects"
-  },
+  "listTitle": "Project list",
   "filters": {
     "ariaLabel": "Filter projects",
     "all": "All",
     "overseas": "Overseas",
     "domestic": "Domestic",
-    "seminar": "Seminars & Training",
+    "seminar": "Seminars & training",
     "env": "Environment",
-    "energy": "Renewable Energy",
-    "consumer": "Consumer Goods & Retail",
-    "it": "Trend IT",
-    "material": "Advanced & Industrial Materials"
+    "energy": "Renewable energy",
+    "consumer": "Consumer goods & retail",
+    "it": "IT",
+    "material": "Advanced & industrial materials"
   },
   "table": {
-    "category": "Category",
-    "categorySub": "",
-    "industry": "Industry",
-    "industrySub": "",
-    "title": "Project Title",
-    "titleSub": "",
+    "year": "Year",
+    "place": "Where",
+    "title": "Project",
     "client": "Client",
-    "clientSub": "",
-    "detailHint": "View Details",
-    "orderingOrg": "Client",
-    "industryLabel": "Industry",
-    "empty": "No projects in this category yet."
+    "category": "Type",
+    "tags": "Keywords",
+    "location": "Location",
+    "industry": "Industry",
+    "nationwide": "Nationwide (Korea)",
+    "domestic": "Korea",
+    "expand": "Show details",
+    "collapse": "Hide details",
+    "empty": "No projects in this category yet. Choose another one.",
+    "count": "{count} projects"
   },
   "categories": {
-    "exhibitionOverseas": "Exhibition (Overseas)",
-    "meetingOverseas": "Business Meetings (Overseas)",
-    "meetingDomestic": "Business Meetings (Domestic)",
-    "seminar": "Seminar (Training)"
+    "exhibitionOverseas": "Exhibition (overseas)",
+    "meetingOverseas": "Meetings (overseas)",
+    "meetingDomestic": "Meetings (Korea)",
+    "seminar": "Seminar"
   },
   "industries": {
-    "material": "Advanced Materials",
-    "consumer": "Consumer Goods",
+    "material": "Advanced materials",
+    "consumer": "Consumer goods",
     "env": "Environment",
     "energy": "Energy",
-    "it": "IT Solutions"
-  },
-  "modal": {
-    "performance": "{year} Performance",
-    "orderingOrg": "Client",
-    "focusArea": "Focus Area",
-    "sector": "Sector",
-    "nationwide": "Nationwide (Korea)",
-    "caseVerified": "Case Verified",
-    "consult": "Request a Consultation",
-    "close": "Close"
-  },
-  "cta": {
-    "highlight": "Our Track Record",
-    "titleLead": "Successful",
-    "titleHighlight": "business results",
-    "titleMid": ",",
-    "titleTail": "proven by Market Balance.",
-    "description": "Backed by a wide range of global projects, we help you get the most out of your business."
+    "it": "IT solutions"
   },
   "projects": [
     {
@@ -86,84 +55,121 @@
       "title": "2025 Advanced Materials Week Korea – Operating Business Meetings with Invited Overseas Buyers",
       "client": "MESSE ESANG Co., Ltd.",
       "location": "",
-      "tags": ["Buyer Matching", "Materials Week"]
+      "tags": [
+        "Buyer Matching",
+        "Materials Week"
+      ]
     },
     {
       "id": 2,
       "title": "1st Korea Industrial Complex Export Fair – Export Business Meetings with Invited Overseas Buyers",
       "client": "Korea Industrial Complex Corporation (KICOX), Korea Federation of Industrial Complex Management Associations",
       "location": "",
-      "tags": ["Export Fair", "Industrial Complex"]
+      "tags": [
+        "Export Fair",
+        "Industrial Complex"
+      ]
     },
     {
       "id": 3,
       "title": "2025 IE expo China (Shanghai) – Marketing Consulting for Korea Pavilion Exhibitors",
       "client": "Korea Environment Preservation Association (KEPA)",
       "location": "Shanghai, China",
-      "tags": ["IE EXPO China", "Environment", "Consulting"]
+      "tags": [
+        "IE EXPO China",
+        "Environment",
+        "Consulting"
+      ]
     },
     {
       "id": 4,
       "title": "ENVEX (International Environmental Industry Technology & Green Energy Exhibition) – Korea–China Technology Cooperation Exchange",
       "client": "Korea Environment Preservation Association (KEPA)",
       "location": "",
-      "tags": ["MICE", "Korea–China Cooperation"]
+      "tags": [
+        "MICE",
+        "Korea–China Cooperation"
+      ]
     },
     {
       "id": 5,
       "title": "Intersolar Europe, Germany – Buyer Matching Meetings at the KNREA Joint Pavilion",
       "client": "Korea New & Renewable Energy Association (KNREA)",
       "location": "Munich, Germany",
-      "tags": ["Intersolar", "Renewables"]
+      "tags": [
+        "Intersolar",
+        "Renewables"
+      ]
     },
     {
       "id": 6,
       "title": "7th Korea–China Export Fair & Roadshow Briefings – Operations Support",
       "client": "Korea Environmental Industry Association (KEIA)",
       "location": "China",
-      "tags": ["Korea–China Export", "Roadshow"]
+      "tags": [
+        "Korea–China Export",
+        "Roadshow"
+      ]
     },
     {
       "id": 7,
       "title": "2025 Renewable Energy ODA Project Development & Strategy Lecture",
       "client": "Korea New & Renewable Energy Association (KNREA)",
       "location": "",
-      "tags": ["ODA", "Lecture"]
+      "tags": [
+        "ODA",
+        "Lecture"
+      ]
     },
     {
       "id": 8,
       "title": "4th Trade Mission (Shanghai, China)",
       "client": "Jeonbuk State Business Promotion Agency",
       "location": "Shanghai, China",
-      "tags": ["Trade Mission", "Consumer Goods"]
+      "tags": [
+        "Trade Mission",
+        "Consumer Goods"
+      ]
     },
     {
       "id": 9,
       "title": "Renewable Energy Market Development Mission to Southeast Asia (Indonesia)",
       "client": "Korea Energy Agency (KEA), Korea New & Renewable Energy Association (KNREA)",
       "location": "Indonesia",
-      "tags": ["Market Development Mission", "Renewables"]
+      "tags": [
+        "Market Development Mission",
+        "Renewables"
+      ]
     },
     {
       "id": 10,
       "title": "2025 Global Renewable Energy Economic Outlook & Response Strategies",
       "client": "Korea New & Renewable Energy Association (KNREA)",
       "location": "",
-      "tags": ["Outlook Seminar", "Renewables"]
+      "tags": [
+        "Outlook Seminar",
+        "Renewables"
+      ]
     },
     {
       "id": 11,
       "title": "Discovery & Support Program for Companies with Promising New Technologies and Products – Overseas Expansion Consulting",
       "client": "Korea Industrial Complex Corporation (KICOX)",
       "location": "",
-      "tags": ["Consulting", "Environment"]
+      "tags": [
+        "Consulting",
+        "Environment"
+      ]
     },
     {
       "id": 12,
       "title": "Overseas Buyer Linkage Consulting for Companies with Promising New Technologies and Products",
       "client": "Korea Industrial Complex Corporation (KICOX)",
       "location": "",
-      "tags": ["IT", "Buyer Linkage"]
+      "tags": [
+        "IT",
+        "Buyer Linkage"
+      ]
     }
   ]
 }
