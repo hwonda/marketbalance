@@ -114,28 +114,35 @@
     "regions": [
       {
         "name": "아시아",
-        "countries": "중국, 홍콩, 싱가포르, 베트남, 태국, 대만, 인도"
+        "countries": "중국, 홍콩, 싱가포르, 베트남, 태국, 대만, 인도",
+        "key": "asia"
       },
       {
         "name": "유럽",
-        "countries": "독일, 체코, 헝가리"
+        "countries": "독일, 체코, 헝가리",
+        "key": "europe"
       },
       {
         "name": "중동",
-        "countries": "UAE, 튀르키예"
+        "countries": "UAE, 튀르키예",
+        "key": "middleEast"
       },
       {
         "name": "CIS",
-        "countries": "러시아"
+        "countries": "러시아",
+        "key": "cis"
       },
       {
         "name": "북미",
-        "countries": "미국"
+        "countries": "미국",
+        "key": "northAmerica"
       },
       {
         "name": "오세아니아",
-        "countries": "호주"
+        "countries": "호주",
+        "key": "oceania"
       }
-    ]
+    ],
+    "headOffice": "본사"
   }
 }

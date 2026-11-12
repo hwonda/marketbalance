@@ -8,6 +8,7 @@ import Section from "@/components/ui/Section";
 import ContactBand from "@/components/ui/ContactBand";
 import TextLink from "@/components/ui/TextLink";
 import { ButtonLink } from "@/components/ui/Button";
+import { NetworkMap, type RegionKey } from "@/components/maps";
 
 export default function HomePage() {
   const { home } = useDictionary();
@@ -104,12 +105,10 @@ export default function HomePage() {
       </Section>
 
       <Section title={network.title} intro={network.intro} tone="mist">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/image/main/m-2.jpg"
-          alt={network.mapAlt}
-          className="aspect-[16/10] w-full rounded-lg object-cover"
-          loading="lazy"
+        <NetworkMap
+          labels={Object.fromEntries(network.regions.map((r) => [r.key, r.name])) as Record<RegionKey, string>}
+          headOfficeLabel={network.headOffice}
+          ariaLabel={network.mapAlt}
         />
         <dl className="mt-8 grid gap-x-8 gap-y-5 sm:grid-cols-2">
           {network.regions.map((region) => (

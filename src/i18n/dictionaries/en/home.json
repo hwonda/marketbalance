@@ -114,28 +114,35 @@
     "regions": [
       {
         "name": "Asia",
-        "countries": "China, Hong Kong, Singapore, Vietnam, Thailand, Taiwan, India"
+        "countries": "China, Hong Kong, Singapore, Vietnam, Thailand, Taiwan, India",
+        "key": "asia"
       },
       {
         "name": "Europe",
-        "countries": "Germany, Czech Republic, Hungary"
+        "countries": "Germany, Czech Republic, Hungary",
+        "key": "europe"
       },
       {
         "name": "Middle East",
-        "countries": "UAE, Türkiye"
+        "countries": "UAE, Türkiye",
+        "key": "middleEast"
       },
       {
         "name": "CIS",
-        "countries": "Russia"
+        "countries": "Russia",
+        "key": "cis"
       },
       {
         "name": "North America",
-        "countries": "USA"
+        "countries": "USA",
+        "key": "northAmerica"
       },
       {
         "name": "Oceania",
-        "countries": "Australia"
+        "countries": "Australia",
+        "key": "oceania"
       }
-    ]
+    ],
+    "headOffice": "Head office"
   }
 }
