@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Buyer Matching",
+    "description": "A verified global network and precise matching data to connect you with the right business partners."
+  },
+  "hero": {
+    "ariaLabel": "Page header",
+    "eyebrow": "Database Portal",
+    "titleLead": "Buyer",
+    "titleHighlight": "Matching.",
+    "descLine1": "Through a verified global network and precise matching data,",
+    "descLine2": "we connect you with the right business partners."
+  },
+  "breadcrumb": {
+    "ariaLabel": "You are here",
+    "current": "Buyer Matching"
+  },
+  "search": {
+    "placeholder": "Country, company, industry...",
+    "ariaLabel": "Search buyers",
+    "emptyTitle": "No matching buyers found.",
+    "emptyHint": "Try a different country, company name or industry.",
+    "clear": "Clear search"
+  },
+  "columns": {
+    "country": "Country",
+    "company": "Company",
+    "category": "Industry",
+    "type": "Business Type",
+    "products": "Products",
+    "website": "Website",
+    "manager": "Contact Person",
+    "position": "Position",
+    "phone": "Phone",
+    "mobile": "Mobile",
+    "email": "Email"
+  },
+  "pagination": {
+    "summary": "Showing {shown} of {total} results",
+    "ariaLabel": "Pagination",
+    "previous": "Previous page",
+    "next": "Next page",
+    "page": "Page {page}"
+  },
+  "notice": {
+    "title": "About this data",
+    "body": "The buyers listed above are sample data for illustration. Our full buyer database is shared after a consultation."
+  }
+}
