@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Inquiry",
+    "description": "Request a consultation on overseas exhibitions, export marketing, buyer sourcing and other Market Balance services."
+  },
+  "hero": {
+    "ariaLabel": "Page header",
+    "eyebrow": "International Trade Consulting Group",
+    "titleLine1": "Let's Build",
+    "titleLine2": "Our Future.",
+    "introLine1": "The right partnership for your business growth —",
+    "introLine2": "Market Balance is here to solve your challenges."
+  },
+  "breadcrumb": {
+    "ariaLabel": "Breadcrumb",
+    "current": "INQUIRY"
+  },
+  "intro": {
+    "eyebrow": "Consultation Request",
+    "title": "Ask us anything, anytime",
+    "subtitle": "From your first step into overseas markets to a successful landing, our specialists will answer every question with care."
+  },
+  "form": {
+    "title": "Consultation Request Form",
+    "subtitle": "Choose a service area and tell us about your needs.",
+    "requiredNote": "Required fields",
+    "fields": {
+      "company": {
+        "label": "Company",
+        "placeholder": "Company or organization name"
+      },
+      "name": {
+        "label": "Contact Name",
+        "placeholder": "Your full name"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "A number we can reach you at"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Email address for our reply"
+      },
+      "inquiryType": {
+        "label": "Service Area",
+        "placeholder": "Select a service area"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us as much as you can about your needs so we can prepare for the consultation."
+      }
+    },
+    "inquiryTypes": {
+      "exhibition": "Overseas Exhibition Support",
+      "export": "SME Export Marketing",
+      "event": "Business Event Planning & Operation",
+      "buyer": "Overseas Buyer Sourcing & Matching",
+      "trade": "Trade Agency"
+    },
+    "privacy": {
+      "label": "I agree to the collection and use of my personal information.",
+      "required": "(Required)"
+    },
+    "submit": "Submit Inquiry",
+    "submitting": "Sending…"
+  },
+  "errors": {
+    "missing_fields": "Please fill in all required fields.",
+    "invalid_email": "Please check the email address format.",
+    "invalid_type": "Please select a service area.",
+    "consent_required": "Please agree to the collection and use of your personal information.",
+    "not_configured": "Online inquiries are not available yet.",
+    "delivery_failed": "We couldn't send your inquiry. Please try again in a moment.",
+    "fallback": "If it's urgent, please contact us directly:",
+    "fallbackPhone": "Phone",
+    "fallbackEmail": "Email"
+  },
+  "success": {
+    "titleLine1": "Your inquiry has",
+    "titleLine2": "been received!",
+    "bodyLine1": "Our specialist will review it",
+    "bodyLine2": "and get back to you shortly.",
+    "again": "Send another inquiry"
+  },
+  "cta": {
+    "highlight": "Get in Touch",
+    "titleLead": "Take the",
+    "titleHighlight": "first step",
+    "titleAfterHighlight": " into global markets — ",
+    "titleTail": "talk to us today.",
+    "description": "If you have any questions or need a consultation, feel free to reach out anytime."
+  }
+}
