@@ -8,7 +8,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { I18nProvider } from "@/i18n/I18nProvider";
 import "../globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://h200027.neullabs.kr";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://marketbalance.vercel.app";
 const OG_LOCALE = { ko: "ko_KR", en: "en_US" } as const;
 
 export function generateStaticParams() {
