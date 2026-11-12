@@ -1,111 +1,66 @@
 {
   "meta": {
-    "title": "About Us",
-    "description": "Market Balance Co., Ltd. is a global business partner whose field-proven specialists run overseas exhibitions, export marketing and buyer sourcing & matching."
+    "title": "About us",
+    "description": "Market Balance Co., Ltd. is a team of specialists with field experience in Korea and abroad who take overseas exhibitions, export marketing and buyer sourcing from plan to result."
   },
-  "breadcrumbLabel": "Breadcrumb",
-  "breadcrumbCurrent": "About Us",
-  "hero": {
-    "label": "Page header",
-    "eyebrow": "Collective Intelligence",
-    "titleLine1": "Beyond the",
-    "titleHighlight": "Balance.",
-    "description": [
-      "Market Balance goes beyond overseas marketing outsourcing —",
-      "we help your business find its ideal balance in the global market."
-    ]
+  "intro": {
+    "title": "About us",
+    "lead": "Who Market Balance is, and how we work with you."
   },
   "vision": {
-    "label": "Vision",
-    "eyebrow": "Our Vision",
-    "titleLine1": "Balanced Success",
-    "titleHighlight": "in the Global Market",
-    "description": "Our specialists bring hands-on experience from fields at home and abroad, delivering exhibitions as well as market research, export consultations, buyer sourcing and matching, conferences, investor relations events, roadshows and overseas marketing consulting.",
-    "quote": "From planning and budgeting to execution, we stay open and attentive to our clients — and remain your overseas marketing partner all the way through.",
-    "points": [
-      "A steady balance in the global market",
-      "Systematic localization strategies that deliver results",
-      "Tailored solutions built on deep experience"
-    ]
-  },
-  "strengths": {
-    "label": "Key strengths",
-    "eyebrow": "Key Strengths",
-    "title": "Key Strengths",
-    "subtitle": "What makes us different",
-    "items": [
+    "title": "Overview",
+    "paragraphs": [
+      "Market Balance Co., Ltd. is a team of specialists with hands-on experience in Korea and abroad. We run trade fair participation, market research, export meetings, buyer sourcing and matching, conferences, investor briefings, roadshows and overseas marketing consulting.",
+      "One team stays with your project from planning and budgeting to delivery and the final report."
+    ],
+    "photoAlt": "Visitors walking through an overseas exhibition hall",
+    "principlesTitle": "How we work",
+    "principles": [
       {
-        "num": "20",
-        "unit": "yrs",
-        "label": "20+ years of hands-on experience",
-        "desc": "Our CEO's extensive background in export marketing, exhibitions and conventions gives us distinctive know-how and proven problem-solving ability."
+        "title": "We work to results",
+        "desc": "An event is not the finish line. We carry the work from objectives and strategy through operations, performance review and follow-up business."
       },
       {
-        "num": "10",
-        "unit": "yrs+",
-        "label": "Overseas marketing specialists",
-        "desc": "Each project is run by a dedicated team of specialists with at least 10 years of on-site MICE experience and a global perspective."
+        "title": "Every company gets its own strategy",
+        "desc": "We design each plan around the company and its industry, from market diagnosis to the execution roadmap."
       },
       {
-        "num": "20",
-        "unit": "+",
-        "label": "A wide global network",
-        "desc": "Through partners in some 20 countries across the Americas, Europe, China, Vietnam and beyond, we deliver strategies tailored to each market."
-      },
-      {
-        "num": "20",
-        "unit": "+",
-        "label": "Distinctive international event planning",
-        "desc": "We plan and run more than 20 large-scale international events a year, including overseas buyer invitations, export consultations and trade missions."
-      },
-      {
-        "num": "Many",
-        "unit": "",
-        "label": "Precise buyer sourcing & matching",
-        "desc": "We precisely target leading buyers in advanced industries such as ICT, bio and renewable energy, delivering business matches with a high success rate."
+        "title": "Budgets and progress stay open",
+        "desc": "You see every stage with us: planning, budget, delivery and reporting."
       }
     ]
   },
-  "values": {
-    "label": "Core values",
-    "eyebrow": "Core Values",
-    "title": "Core Values",
-    "subtitle": "The principles we live by",
+  "strengths": {
+    "title": "Key strengths",
+    "intro": "Five things worth checking before you hand over an overseas project.",
     "items": [
       {
-        "title": "Result-Oriented",
-        "subtitle": "Results over events",
-        "desc": "We aim for tangible results, not just events. From objective analysis to strategy, operation, performance review and follow-up business, we run one continuous cycle."
+        "title": "A CEO with 20+ years in the field",
+        "desc": "Know-how from export marketing, exhibitions and conventions that solves problems quickly."
       },
       {
-        "title": "Customized Strategy",
-        "subtitle": "Strategies built for you",
-        "desc": "More than an agency, we build global market-entry strategies tailored to each company and industry — from market diagnosis to an execution roadmap."
+        "title": "Dedicated teams with 10+ years' experience",
+        "desc": "Each project gets its own team of specialists with at least ten years of on-site MICE work."
       },
       {
-        "title": "Global Network",
-        "subtitle": "A strong global network",
-        "desc": "We maintain regional offices and strong partnerships with marketing specialists in some 20 countries, including China, Southeast Asia, Russia, India, the Americas and Europe."
+        "title": "Partners in some 20 countries",
+        "desc": "With partners across the Americas, Europe, China, Vietnam and more, we plan for each market on its own terms."
       },
       {
-        "title": "Trust & Transparency",
-        "subtitle": "Trust and transparency",
-        "desc": "With an open mind toward our clients, we put transparent and honest partnership first — from planning and budgeting to execution and reporting."
+        "title": "20+ international events a year",
+        "desc": "We plan and run large international events every year, including overseas buyer meetings, export fairs and trade missions."
+      },
+      {
+        "title": "Buyer sourcing by industry",
+        "desc": "We target leading buyers in fields such as ICT, bio and renewable energy, and set up meetings with a real chance of a deal."
       }
     ]
   },
   "history": {
-    "label": "History",
-    "eyebrow": "Vision & History",
-    "title": "Our Journey",
-    "description": [
-      "With deep expertise and a global network, Market Balance",
-      "builds a sustainable balance of growth that connects markets worldwide."
-    ],
+    "title": "History",
     "years": [
       {
         "year": "2025",
-        "label": "Global Expansion Phase",
         "items": [
           "Selected as official organizer of the 1st Korea Industrial Complex Export Fair",
           "Appointed overseas business partner of the Jeonbuk State Business & Trade Promotion Agency",
@@ -116,9 +71,8 @@
       },
       {
         "year": "2024",
-        "label": "Founding the Balance",
         "items": [
-          "Official launch of Market Balance Co., Ltd. (Oct 2024)",
+          "Market Balance Co., Ltd. founded (October 2024)",
           "Built the architecture of a global export marketing service platform",
           "Signed strategic partnerships with major overseas exhibition organizers"
         ]
@@ -126,34 +80,41 @@
     ]
   },
   "network": {
-    "label": "Global network",
-    "eyebrow": "Global Network",
-    "title": "Global Network",
-    "subtitle": "Our worldwide presence",
-    "description": "With regional offices in China, Southeast Asia, Russia, India and the Americas, and strong ties to marketing specialists in key overseas markets, we keep raising the standard of our service.",
-    "mapAlt": "Global network map",
-    "badge": "Global Reach",
-    "cardTitle": ["Connecting markets,", "uniting the world."],
-    "cardDescription": "Our network of hubs around the world helps your business localize in every market.",
-    "listTitle": "Network",
+    "title": "Overseas network",
+    "intro": "We have regional bases in China, Southeast Asia, Russia, India and the Americas, and work with marketing specialists in each key market.",
+    "mapAlt": "Market Balance overseas network map: links from the head office in Korea to bases in Asia, Europe, the Middle East, the CIS, North America and Oceania",
+    "headOffice": "Head office",
     "regions": [
-      { "name": "Europe", "countries": "Germany · Czech Republic · Hungary" },
-      { "name": "North America", "countries": "USA" },
-      { "name": "Oceania", "countries": "Australia" },
-      { "name": "CIS", "countries": "Russia" },
-      { "name": "Middle East", "countries": "UAE · Türkiye" },
       {
+        "key": "asia",
         "name": "Asia",
-        "countries": "China · Hong Kong · Singapore · Vietnam · Thailand · Taiwan · India"
+        "countries": "China, Hong Kong, Singapore, Vietnam, Thailand, Taiwan, India"
+      },
+      {
+        "key": "europe",
+        "name": "Europe",
+        "countries": "Germany, Czech Republic, Hungary"
+      },
+      {
+        "key": "middleEast",
+        "name": "Middle East",
+        "countries": "UAE, Türkiye"
+      },
+      {
+        "key": "cis",
+        "name": "CIS",
+        "countries": "Russia"
+      },
+      {
+        "key": "northAmerica",
+        "name": "North America",
+        "countries": "USA"
+      },
+      {
+        "key": "oceania",
+        "name": "Oceania",
+        "countries": "Australia"
       }
     ]
-  },
-  "cta": {
-    "highlight": "About Us",
-    "titleLead": "Find a new balance in the",
-    "titleHighlight": "global market",
-    "titleTail": "",
-    "titleLine2": "with Market Balance.",
-    "description": "Drawing on accumulated data and experienced people, we will be a reliable bridge to your successful overseas expansion."
   }
 }

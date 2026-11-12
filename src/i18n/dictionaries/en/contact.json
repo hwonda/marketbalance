@@ -1,93 +1,77 @@
 {
   "meta": {
-    "title": "Inquiry",
-    "description": "Request a consultation on overseas exhibitions, export marketing, buyer sourcing and other Market Balance services."
-  },
-  "hero": {
-    "ariaLabel": "Page header",
-    "eyebrow": "International Trade Consulting Group",
-    "titleLine1": "Let's Build",
-    "titleLine2": "Our Future.",
-    "introLine1": "The right partnership for your business growth —",
-    "introLine2": "Market Balance is here to solve your challenges."
-  },
-  "breadcrumb": {
-    "ariaLabel": "Breadcrumb",
-    "current": "INQUIRY"
+    "title": "Request a consultation",
+    "description": "Ask about overseas trade fairs, buyer sourcing and matching, or export marketing. Our team will review your request and get back to you."
   },
   "intro": {
-    "eyebrow": "Consultation Request",
-    "title": "Ask us anything, anytime",
-    "subtitle": "From your first step into overseas markets to a successful landing, our specialists will answer every question with care."
+    "title": "Request a consultation",
+    "lead": "Tell us which market you want to reach and where you are now. Our team will review it and get back to you."
   },
   "form": {
-    "title": "Consultation Request Form",
-    "subtitle": "Choose a service area and tell us about your needs.",
-    "requiredNote": "Required fields",
+    "label": "Consultation request",
+    "requiredNote": "All fields are required.",
     "fields": {
       "company": {
-        "label": "Company",
-        "placeholder": "Company or organization name"
+        "label": "Company or organisation",
+        "placeholder": ""
       },
       "name": {
-        "label": "Contact Name",
-        "placeholder": "Your full name"
+        "label": "Your name",
+        "placeholder": ""
       },
       "phone": {
         "label": "Phone",
-        "placeholder": "A number we can reach you at"
+        "placeholder": "+82-10-0000-0000"
       },
       "email": {
         "label": "Email",
-        "placeholder": "Email address for our reply"
+        "placeholder": "name@company.com"
       },
       "inquiryType": {
-        "label": "Service Area",
-        "placeholder": "Select a service area"
+        "label": "Topic",
+        "placeholder": "Choose a topic"
       },
       "message": {
-        "label": "Message",
-        "placeholder": "Tell us as much as you can about your needs so we can prepare for the consultation."
+        "label": "Your question",
+        "placeholder": "Countries, trade fairs, products and timing help us give you a precise answer."
       }
     },
     "inquiryTypes": {
-      "exhibition": "Overseas Exhibition Support",
-      "export": "SME Export Marketing",
-      "event": "Business Event Planning & Operation",
-      "buyer": "Overseas Buyer Sourcing & Matching",
-      "trade": "Trade Agency"
+      "exhibition": "Overseas exhibition support",
+      "export": "SME export marketing",
+      "event": "Business event planning",
+      "buyer": "Buyer sourcing & matching",
+      "trade": "Trade agency",
+      "other": "Something else"
     },
     "privacy": {
       "label": "I agree to the collection and use of my personal information.",
-      "required": "(Required)"
+      "detail": "We collect your company, name, phone and email only to reply to this request."
     },
-    "submit": "Submit Inquiry",
+    "submit": "Request a consultation",
     "submitting": "Sending…"
   },
   "errors": {
-    "missing_fields": "Please fill in all required fields.",
-    "invalid_email": "Please check the email address format.",
-    "invalid_type": "Please select a service area.",
-    "consent_required": "Please agree to the collection and use of your personal information.",
-    "not_configured": "Online inquiries are not available yet.",
-    "delivery_failed": "We couldn't send your inquiry. Please try again in a moment.",
-    "fallback": "If it's urgent, please contact us directly:",
+    "required": "Fill in this field.",
+    "missing_fields": "Fill in the empty fields.",
+    "invalid_email": "Check the email address, for example name@company.com.",
+    "invalid_type": "Choose a topic.",
+    "consent_required": "You need to agree to the use of your personal information to send this request.",
+    "not_configured": "Online requests are not available right now. Call or email us using the details below.",
+    "delivery_failed": "Your request could not be sent. Try again in a moment, or contact us using the details below.",
     "fallbackPhone": "Phone",
     "fallbackEmail": "Email"
   },
   "success": {
-    "titleLine1": "Your inquiry has",
-    "titleLine2": "been received!",
-    "bodyLine1": "Our specialist will review it",
-    "bodyLine2": "and get back to you shortly.",
-    "again": "Send another inquiry"
+    "title": "Your request has been sent.",
+    "body": "Our team will review it and contact you using the details you gave.",
+    "again": "Write another request"
   },
-  "cta": {
-    "highlight": "Get in Touch",
-    "titleLead": "Take the",
-    "titleHighlight": "first step",
-    "titleAfterHighlight": " into global markets — ",
-    "titleTail": "talk to us today.",
-    "description": "If you have any questions or need a consultation, feel free to reach out anytime."
+  "aside": {
+    "title": "Contact us directly",
+    "phoneLabel": "Office",
+    "emailLabel": "Email",
+    "note": "We reply by phone or email after reviewing your request.",
+    "directions": "Get directions"
   }
 }

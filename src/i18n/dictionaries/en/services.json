@@ -1,271 +1,334 @@
 {
   "meta": {
     "title": "Services",
-    "description": "Overseas exhibition support, SME export marketing, business event planning, overseas buyer sourcing and matching, and trade agency services from Market Balance Co., Ltd."
+    "description": "Overseas exhibition support, buyer sourcing and matching, SME export marketing, business event planning and trade agency: the five things Market Balance does."
   },
-  "aria": {
-    "pageHeader": "Page header",
-    "breadcrumb": "Breadcrumb",
-    "tabs": "Jump to a service",
-    "exhibition": "Overseas exhibition support",
-    "marketing": "SME export marketing support",
-    "mice": "Business event planning and operation",
-    "buyer": "Overseas buyer sourcing and matching",
-    "trade": "Trade agency"
+  "intro": {
+    "title": "Services",
+    "lead": "From exhibiting at trade fairs to buyer meetings, export marketing, events and day-to-day trade work. Pick the parts you need, or hand us the whole project."
   },
-  "breadcrumb": "Services",
-  "hero": {
-    "eyebrow": "Global Operations",
-    "titleLine1": "Our",
-    "titleLine2": "Specialization.",
-    "descLines": [
-      "We look past conventional marketing and focus on real results.",
-      "Discover the export solutions only Market Balance can deliver."
-    ]
-  },
-  "tabs": {
-    "industries": "Key Industries",
-    "exhibition": "Overseas Exhibition Support",
-    "marketing": "SME Export Marketing",
-    "mice": "Business Event Planning",
-    "buyer": "Buyer Sourcing & Matching",
-    "trade": "Trade Agency"
-  },
-  "labels": {
-    "coreBusiness": "Core Business —",
-    "serviceContent": "What We Do",
-    "serviceTargets": "Who It's For",
-    "targetCountries": "Target Markets",
-    "global": "Global",
-    "process": "Our Process."
+  "nav": {
+    "label": "Jump to a service"
   },
   "industries": {
-    "eyebrow": "Industry Focus",
-    "title": "Key Industries",
+    "title": "Industries we work in",
+    "intro": "We have built up trade fair and buyer networks in these industries.",
     "items": [
-      { "label": "", "name": "Environment" },
-      { "label": "", "name": "Renewable Energy" },
-      { "label": "IT / SW / AI", "name": "Digital Technology" },
-      { "label": "", "name": "Mobility" },
-      { "label": "", "name": "Medical Devices" },
-      { "label": "Food, Cosmetics & More", "name": "Consumer Goods" }
+      "Environment",
+      "Renewable energy",
+      "Digital technology (IT, software, AI)",
+      "Mobility",
+      "Medical devices",
+      "Consumer goods (food, cosmetics and more)"
     ]
   },
-  "exhibition": {
-    "eyebrow": "Strategic Exhibition",
-    "title": "Overseas Exhibition Support.",
-    "desc": "We partner with overseas exhibition organizers to help Korean companies exhibit abroad",
-    "descDetail": "(booth rental, stand construction, logistics and exhibition marketing)",
-    "note": "*We source and run promising overseas exhibitions in line with government and agency demand.",
-    "serviceGroups": [
-      {
-        "title": "Strategy & Analysis",
-        "items": [
-          "Linking and administering government subsidies",
-          "Organizing national pavilions and supporting exhibitors",
-          "Identifying and selecting exhibitions"
-        ]
-      },
-      {
-        "title": "Registration & Ops",
-        "items": [
-          "Exhibition information and booth rental",
-          "Managing exhibitor registration",
-          "Real-time communication with organizers"
-        ]
-      },
-      {
-        "title": "Marketing & Event",
-        "items": [
-          "Pre- and post-show marketing",
-          "On-site promotions and event planning",
-          "Performance analysis and feedback"
-        ]
-      }
-    ],
-    "slides": [
-      { "title": "IE EXPO China", "desc": "(Environmental technology trade fair, Shanghai, China)" },
-      { "title": "IE EXPO Chengdu", "desc": "(Environmental technology trade fair, Chengdu, China)" },
-      { "title": "IE EXPO Shenzhen", "desc": "(Environmental technology trade fair, Shenzhen, China)" },
-      { "title": "WETEX", "desc": "(Water, Energy, Technology and Environment Exhibition, Dubai)" }
-    ],
-    "processDescLines": [
-      "Market Balance's systematic four-step process,",
-      "built to make your global expansion a success."
-    ],
-    "steps": [
-      "Exhibition information & selection*",
-      "Booth application",
-      "Exhibitor manual & preparation support",
-      "On-site support (by arrangement)"
-    ],
-    "footnote": {
-      "lead": "*Exhibition information and selection include",
-      "highlight": "tailored exhibition recommendations",
-      "otherLabel": "+Additional services:",
-      "other": "stand construction, travel, logistics, interpretation, promotional materials, on-site staff and more"
+  "headings": {
+    "audience": "Who it's for",
+    "included": "What's included",
+    "steps": "How it works",
+    "exhibitions": "Key trade fairs",
+    "notes": "Good to know",
+    "related": "Related projects"
+  },
+  "services": [
+    {
+      "id": "exhibition",
+      "title": "Overseas exhibition support",
+      "summary": "We work with overseas organisers to handle trade fair participation for Korean companies, including booth rental, stand building, shipping and exhibition marketing.",
+      "photoAlt": "Korea pavilion booths at an overseas trade fair",
+      "audience": [],
+      "groups": [
+        {
+          "title": "Strategy and preparation",
+          "items": [
+            "Applying for and managing government funding",
+            "Organising joint pavilions and exhibitor support",
+            "Finding and selecting the right fair"
+          ]
+        },
+        {
+          "title": "Registration and operations",
+          "items": [
+            "Fair information and booth rental",
+            "Managing exhibitor registration",
+            "Real-time contact with the organiser"
+          ]
+        },
+        {
+          "title": "Marketing and on site",
+          "items": [
+            "Pre- and post-show marketing",
+            "On-site promotions and events",
+            "Results analysis and feedback"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Fair information and selection",
+          "detail": "We recommend fairs that suit your company."
+        },
+        {
+          "title": "Booth application",
+          "detail": ""
+        },
+        {
+          "title": "Manual registration and preparation",
+          "detail": ""
+        },
+        {
+          "title": "On-site support",
+          "detail": "The scope is agreed with you."
+        }
+      ],
+      "exhibitions": [
+        {
+          "name": "IE expo China",
+          "place": "Shanghai, China. Environmental technology"
+        },
+        {
+          "name": "IE expo Chengdu",
+          "place": "Chengdu, China. Environmental technology"
+        },
+        {
+          "name": "IE expo Shenzhen",
+          "place": "Shenzhen, China. Environmental technology"
+        },
+        {
+          "name": "WETEX",
+          "place": "Dubai. Water, energy and environment"
+        }
+      ],
+      "notes": [
+        "We find and run promising overseas fairs to meet the needs of government agencies.",
+        "We also arrange stand building, travel, shipping, interpreting, printed materials and on-site staff."
+      ],
+      "related": [
+        "Marketing consulting for Korea Pavilion exhibitors at IE expo China 2025 (Shanghai)",
+        "Buyer matching meetings at the KNREA joint pavilion, Intersolar Europe"
+      ]
+    },
+    {
+      "id": "buyer",
+      "title": "Buyer sourcing & matching",
+      "summary": "We find the right buyers and set up meetings so that introductions turn into real business.",
+      "photoAlt": "A Korean exhibitor shaking hands with an overseas buyer at an export meeting",
+      "audience": [
+        "SMEs and mid-sized companies that want to export",
+        "Companies preparing to enter overseas markets",
+        "Exhibitors and companies applying for business meetings",
+        "Companies supported by local governments and export agencies"
+      ],
+      "groups": [
+        {
+          "title": "Sourcing",
+          "items": [
+            "Promising buyer databases by industry",
+            "Shortlisting potential partners",
+            "Local agent channels overseas"
+          ]
+        },
+        {
+          "title": "Validation and matching",
+          "items": [
+            "Checking local demand for your products",
+            "Gauging buyer interest and filtering matches",
+            "Scheduling one-to-one meetings"
+          ]
+        },
+        {
+          "title": "Meetings and follow-up",
+          "items": [
+            "Support at online and in-person meetings",
+            "Professional interpreters",
+            "Analysing results and supporting follow-up contracts"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Define goals",
+          "detail": ""
+        },
+        {
+          "title": "Design the strategy",
+          "detail": ""
+        },
+        {
+          "title": "Plan the programme",
+          "detail": ""
+        },
+        {
+          "title": "Run it",
+          "detail": ""
+        },
+        {
+          "title": "Analyse results",
+          "detail": ""
+        },
+        {
+          "title": "Line up follow-up business",
+          "detail": ""
+        }
+      ],
+      "exhibitions": [],
+      "notes": [
+        "Markets include China, Hong Kong, Taiwan, Southeast Asia, Russia, India, Oceania (Australia), the UAE and more.",
+        "We measure success by business outcomes, not by the event itself."
+      ],
+      "related": [
+        "Business meetings with invited overseas buyers at Advanced Materials Week Korea 2025",
+        "Export meetings with invited overseas buyers at the 1st Korea Industrial Complex Export Fair"
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "SME export marketing",
+      "summary": "We run programmes with government and export agencies that open new overseas sales channels for SMEs.",
+      "photoAlt": "Two people shaking hands over a signed export agreement",
+      "audience": [
+        "Government bodies and agencies that support SME exports",
+        "SMEs and mid-sized companies looking to go overseas",
+        "Companies that need marketing support to compete globally",
+        "Companies that need sharper export pitches and IR materials"
+      ],
+      "groups": [
+        {
+          "title": "Programme scope",
+          "items": [
+            "Export business meetings",
+            "Trade missions",
+            "Online and offline marketing and PR",
+            "IR materials and consulting"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Market diagnosis",
+          "detail": "Target country analysis, competitor and distribution research, export feasibility"
+        },
+        {
+          "title": "Entry strategy",
+          "detail": "Product localisation, pricing and positioning, an action roadmap"
+        },
+        {
+          "title": "Buyer sourcing",
+          "detail": "Industry buyer data, demand checks, one-to-one meeting matching"
+        },
+        {
+          "title": "Marketing execution",
+          "detail": "Trade fairs, export meetings and roadshows, online B2B and digital promotion"
+        },
+        {
+          "title": "Contracts and results",
+          "detail": "Trade operations, contract support, after-care and follow-up meetings"
+        }
+      ],
+      "exhibitions": [],
+      "notes": [
+        "Target markets follow the priority countries set by government and agency programmes.",
+        "We also run MICE projects alongside, as agencies require."
+      ],
+      "related": [
+        "4th trade mission (Shanghai, China)",
+        "Renewable energy market development mission to Southeast Asia (Indonesia)"
+      ]
+    },
+    {
+      "id": "mice",
+      "title": "Business event planning",
+      "summary": "We plan, run and follow up conferences, roadshows and seminars for public bodies and companies.",
+      "photoAlt": "Delegates listening to a speaker at a large business forum",
+      "audience": [
+        "SMEs and mid-sized companies looking to go overseas",
+        "Companies that need export meetings and new contacts",
+        "Contractors delivering government and agency programmes",
+        "Organisations that need a strategic corporate event"
+      ],
+      "groups": [
+        {
+          "title": "Planning and set-up",
+          "items": [
+            "Running events for public bodies and companies",
+            "Organising market development and trade missions",
+            "Event strategy and roadmap"
+          ]
+        },
+        {
+          "title": "Meetings and matching",
+          "items": [
+            "Business meetings linked to overseas fairs",
+            "Export meetings with invited overseas buyers",
+            "Interpreting and business matching"
+          ]
+        },
+        {
+          "title": "Events and sales channels",
+          "items": [
+            "Roadshows, promotions and forums",
+            "Seminars in Korea and abroad",
+            "Entry into overseas distribution channels"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "Planning and strategy",
+          "detail": ""
+        },
+        {
+          "title": "Programme design",
+          "detail": ""
+        },
+        {
+          "title": "Event management",
+          "detail": ""
+        },
+        {
+          "title": "On-site delivery",
+          "detail": ""
+        },
+        {
+          "title": "Results and reporting",
+          "detail": ""
+        }
+      ],
+      "exhibitions": [],
+      "notes": [
+        "When needed, we bring in specialist Korean agencies."
+      ],
+      "related": [
+        "Korea–China technology cooperation exchange at ENVEX",
+        "2025 renewable energy ODA project development and strategy lecture"
+      ]
+    },
+    {
+      "id": "trade",
+      "title": "Trade agency",
+      "summary": "For companies that exhibit or join export programmes, we take on ongoing export work: buyer sourcing, market research and export contracts.",
+      "photoAlt": "Container ship at a busy port",
+      "audience": [],
+      "groups": [],
+      "steps": [
+        {
+          "title": "Export groundwork",
+          "detail": "Market research and targeting strategy"
+        },
+        {
+          "title": "Real matching",
+          "detail": "Finding buyers ready to purchase, with one-to-one meetings"
+        },
+        {
+          "title": "Contract and after-care",
+          "detail": "Export contract support and shipping"
+        }
+      ],
+      "exhibitions": [],
+      "notes": [
+        "We plan to digitise export work through online channels."
+      ],
+      "related": []
     }
-  },
-  "marketing": {
-    "eyebrow": "Targeted Marketing",
-    "title": "SME Export Marketing.",
-    "desc": "Working with government and export-support agencies, we run export marketing programs that take SMEs into key global markets",
-    "detail": "Consulting and IR support (export consultation meetings, trade missions, online and offline marketing, PR, IR consulting and more)",
-    "note": "*MICE projects run alongside, in line with government and agency demand",
-    "serviceGroups": [
-      {
-        "title": "Market Research",
-        "items": [
-          "Target country analysis",
-          "Competitor and distribution research",
-          "Export feasibility assessment"
-        ]
-      },
-      {
-        "title": "Entry Strategy",
-        "items": ["Product localization strategy", "Pricing and positioning", "Execution roadmap"]
-      },
-      {
-        "title": "Buyer Matching",
-        "items": ["Industry buyer database", "Pre-validated demand", "1:1 meeting matching"]
-      },
-      {
-        "title": "Marketing Execution",
-        "items": [
-          "Overseas exhibitions",
-          "Export consultation meetings and roadshows",
-          "Online B2B and digital promotion"
-        ]
-      },
-      {
-        "title": "Contract Support",
-        "items": [
-          "Trade operations support",
-          "Contract negotiation support",
-          "Aftercare and follow-up meetings"
-        ]
-      }
-    ],
-    "targets": [
-      "Government bodies and agencies supporting SME exports",
-      "SMEs and mid-sized companies planning to expand overseas",
-      "Companies that need marketing support to compete globally",
-      "Companies that need stronger export pitches and IR materials"
-    ],
-    "countries": "Key markets worldwide (based on the target countries of government and agency programs)"
-  },
-  "mice": {
-    "eyebrow": "Event Management",
-    "title": "Business Event Planning & Operation.",
-    "desc": "End-to-end support for conferences, roadshows, seminars and corporate events in Korea and abroad, for government, agencies and companies — from planning and operation to follow-up",
-    "note": "*Backed by partner specialist organizations in Korea when needed",
-    "serviceGroups": [
-      {
-        "title": "Planning & Setup",
-        "items": [
-          "Full event management for government, agencies and companies",
-          "Organizing market development and trade missions",
-          "Event strategy and roadmap"
-        ]
-      },
-      {
-        "title": "Matching & Support",
-        "items": [
-          "Business meetings linked to overseas exhibitions",
-          "Export meetings with invited overseas buyers",
-          "Interpretation, translation and business matching"
-        ]
-      },
-      {
-        "title": "Events & Channels",
-        "items": [
-          "Roadshows, promotional fairs and forums",
-          "Seminars in Korea and abroad",
-          "Entry into overseas distribution channels"
-        ]
-      }
-    ],
-    "targets": [
-      "SMEs and mid-sized companies planning to expand overseas",
-      "Companies seeking export meetings and new networks",
-      "Contractors running government and agency programs",
-      "Organizations that need strategic corporate events"
-    ]
-  },
-  "buyer": {
-    "eyebrow": "Strategic Matching",
-    "title": "Overseas Buyer Sourcing & Matching.",
-    "intro": "Market Balance provides tailored business matching that turns meetings between Korean and overseas companies into real results.",
-    "serviceGroups": [
-      {
-        "title": "Targeting & Sourcing",
-        "items": [
-          "Building industry-specific databases of promising buyers",
-          "Targeting and shortlisting potential partners",
-          "Activating local agent channels overseas"
-        ]
-      },
-      {
-        "title": "Verification & Matching",
-        "items": [
-          "Validating local demand for participants' products",
-          "Buyer interest surveys and match filtering",
-          "Scheduling 1:1 business meetings"
-        ]
-      },
-      {
-        "title": "Consulting & Follow-up",
-        "items": [
-          "On-site and video meeting support",
-          "Professional interpreters",
-          "Meeting analysis and follow-up contract support"
-        ]
-      }
-    ],
-    "targets": [
-      "SMEs and mid-sized companies looking to export",
-      "Companies planning to enter overseas markets",
-      "Companies exhibiting at trade shows or joining business meetings",
-      "Companies backed by local government and export agency programs"
-    ],
-    "countries": "China, Hong Kong, Taiwan, Southeast Asia, Russia, India, Oceania (Australia), the UAE and markets worldwide",
-    "processDescLines": [
-      "Results-driven, not event-driven.",
-      "Market Balance's precise five-step matching process."
-    ],
-    "steps": [
-      "Planning & strategy",
-      "Program design",
-      "Event management",
-      "On-site operation",
-      "Analysis & reporting"
-    ],
-    "summary": {
-      "label": "*Market Balance buyer sourcing & matching",
-      "flow": "Objective analysis → Strategy design → Program planning → Operation → Performance analysis → Follow-up business",
-      "tagline": "We focus on results, not just events."
-    }
-  },
-  "trade": {
-    "eyebrow": "Trade Agency Service",
-    "title": "Trade Agency.",
-    "descLines": [
-      "Systematic, ongoing export agency support for exhibitors and export-marketing participants,",
-      "from buyer sourcing and matching to market research and export contracts"
-    ],
-    "note": "We plan to digitally transform (DX) export operations by building online channels",
-    "cards": [
-      { "title": "Export Foundations", "desc": "Market research and targeting strategy" },
-      { "title": "Real Matching", "desc": "Sourcing qualified buyers and 1:1 meeting support" },
-      { "title": "Contracts & Aftercare", "desc": "Export contract support and shipping agency" }
-    ]
-  },
-  "cta": {
-    "highlight": "Our Services",
-    "titleLead": "Discover",
-    "titleHighlight": "tailored global",
-    "titleMid": "expansion",
-    "titleTail": "solutions for your business.",
-    "description": "Raise your business to the next level with export solutions only Market Balance can deliver."
-  }
+  ]
 }

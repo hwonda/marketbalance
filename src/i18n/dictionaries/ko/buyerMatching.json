@@ -1,49 +1,39 @@
 {
   "meta": {
     "title": "바이어 매칭",
-    "description": "검증된 글로벌 네트워크와 정밀한 매칭 데이터를 통해 최적의 비즈니스 파트너를 연결해 드립니다."
+    "description": "산업과 국가별로 해외 바이어를 찾아 수출 상담을 연결합니다."
   },
-  "hero": {
-    "ariaLabel": "페이지 헤더",
-    "eyebrow": "Database Portal",
-    "titleLead": "Buyer",
-    "titleHighlight": "Matching.",
-    "descLine1": "검증된 글로벌 네트워크와 정밀한 매칭 데이터를 통해",
-    "descLine2": "최적의 비즈니스 파트너를 연결해 드립니다."
+  "intro": {
+    "title": "바이어 매칭",
+    "lead": "산업과 국가별로 해외 바이어를 찾아 상담을 연결합니다. 아래 목록에서 어떤 정보를 받게 되는지 확인해 보세요."
   },
-  "breadcrumb": {
-    "ariaLabel": "현재 위치",
-    "current": "Buyer Matching"
+  "notice": {
+    "title": "샘플 데이터입니다.",
+    "body": "아래 바이어 정보는 서비스 예시입니다. 실제 바이어 데이터베이스는 상담 후 제공해 드립니다."
   },
   "search": {
-    "placeholder": "국가, 회사명, 주요 분야 검색...",
-    "ariaLabel": "바이어 검색",
-    "emptyTitle": "검색 결과가 없습니다.",
-    "emptyHint": "다른 국가명이나 회사명, 분야로 다시 검색해 주세요.",
-    "clear": "검색 초기화"
+    "label": "바이어 검색",
+    "placeholder": "국가, 회사명, 분야, 제품",
+    "clear": "검색 지우기",
+    "emptyTitle": "검색어와 맞는 바이어가 없습니다.",
+    "emptyHint": "국가명이나 회사명, 분야를 다른 말로 검색해 보세요."
   },
   "columns": {
     "country": "국가",
-    "company": "회사명",
-    "category": "주요 분야",
-    "type": "기업 유형",
-    "products": "취급 제품",
+    "company": "회사",
     "website": "홈페이지",
-    "manager": "담당자 이름",
-    "position": "직위",
-    "phone": "전화번호",
+    "category": "분야",
+    "products": "취급 제품",
+    "contact": "담당자",
+    "phone": "전화",
     "mobile": "휴대폰",
     "email": "이메일"
   },
   "pagination": {
-    "summary": "Showing {shown} of {total} results",
+    "summary": "총 {total}곳 중 {shown}곳 표시",
     "ariaLabel": "페이지 이동",
     "previous": "이전 페이지",
     "next": "다음 페이지",
-    "page": "{page} 페이지"
-  },
-  "notice": {
-    "title": "샘플 데이터 안내",
-    "body": "위 바이어 정보는 서비스 예시를 위한 샘플 데이터입니다. 실제 바이어 데이터베이스는 상담 후 제공해 드립니다."
+    "page": "{page}페이지"
   }
 }

@@ -1,0 +1,120 @@
+/* Original site (served at /ko, /en). Only scan this version's code; the redesign has its own CSS. */
+@import "tailwindcss" source("./");
+/* Classes used by the v1 root layout in src/app/(v1), which is outside the scanned folder. */
+@source inline("min-h-screen flex flex-col font-sans flex-grow");
+
+@theme {
+  --font-sans: "Inter", "Noto Sans KR", sans-serif;
+  --font-display: "Space Grotesk", "Noto Sans KR", sans-serif;
+  --color-navy: #0c1a35;
+  --color-brand-orange: #e84b3a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-white);
+    font-family: var(--font-sans);
+    color: #1a1a2e;
+    word-break: keep-all;
+    overflow-x: hidden;
+  }
+}
+
+:root {
+  --navy: #0c1a35;
+  --navy-light: #13274f;
+  --green: #2d7a5f;
+  --orange: #e84b3a;
+  --blue: #2563eb;
+  --paper: #f5f2ed;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
+@keyframes shimmer {
+  0% {
+    transform: translate(-100%, -100%) rotate(45deg);
+  }
+  to {
+    transform: translate(100%, 100%) rotate(45deg);
+  }
+}
+@keyframes sparkle {
+  0%,
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+@keyframes float {
+  0%,
+  to {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes glow-red {
+  0%,
+  to {
+    filter: drop-shadow(0 0 5px #e84b3a4d);
+    opacity: 0.15;
+    transform: translate(-50%, -50%) scale(2.8);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px #e84b3ab3);
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
+@keyframes pulse-glow-red {
+  0%,
+  to {
+    filter: drop-shadow(0 0 6px #e84b3a80);
+    opacity: 0.95;
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #e84b3acc);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+@keyframes border-glow-red {
+  0%,
+  to {
+    border-color: #e84b3a66;
+    box-shadow: 0 0 12px #e84b3a26;
+  }
+  50% {
+    border-color: #e84b3acc;
+    box-shadow: 0 0 25px #e84b3a66;
+  }
+}
+@keyframes card-shine {
+  0% {
+    transform: translate(-150%) skew(-30deg);
+  }
+  20%,
+  to {
+    transform: translate(150%) skew(-30deg);
+  }
+}
