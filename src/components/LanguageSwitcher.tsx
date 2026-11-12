@@ -16,14 +16,17 @@ function rememberLocale(locale: Locale) {
   document.cookie = `${LOCALE_COOKIE}=${locale}; path=/; max-age=31536000; samesite=lax`;
 }
 
-/** Each language is named in itself, so a reader who can't read the current page can still find theirs. */
+/** KO / EN tabs. The visible code is short; the accessible name is the language written in itself. */
 export default function LanguageSwitcher({ className, onNavigate }: Props) {
   const current = useLocale();
   const dict = useDictionary();
   const pathname = usePathname();
 
   return (
-    <nav aria-label={dict.languageSwitcher.label} className={cn("flex items-center gap-1 text-small", className)}>
+    <nav
+      aria-label={dict.languageSwitcher.label}
+      className={cn("inline-flex w-fit items-center rounded-full border border-line p-0.5", className)}
+    >
       {locales.map((locale) => {
         const active = locale === current;
         return (
@@ -32,17 +35,18 @@ export default function LanguageSwitcher({ className, onNavigate }: Props) {
             href={localizeHref(pathname, locale)}
             hrefLang={locale}
             lang={locale}
+            aria-label={localeNames[locale]}
             aria-current={active ? "true" : undefined}
             onClick={() => {
               rememberLocale(locale);
               onNavigate?.();
             }}
             className={cn(
-              "rounded-md px-2 py-1.5 transition-colors",
-              active ? "font-semibold text-ink" : "text-ink-faint hover:text-ink",
+              "flex min-h-7 min-w-9 items-center justify-center rounded-full px-2.5 text-[12px] leading-none font-semibold transition-colors",
+              active ? "bg-ink text-white" : "text-ink-faint hover:text-ink",
             )}
           >
-            {localeNames[locale]}
+            {locale.toUpperCase()}
           </NextLink>
         );
       })}
