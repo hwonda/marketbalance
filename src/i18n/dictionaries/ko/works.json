@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "포트폴리오",
+    "description": "마켓발란스㈜의 해외전시, 수출상담회, 세미나 등 주요 프로젝트 수행 실적입니다."
+  },
+  "hero": {
+    "ariaLabel": "페이지 헤더",
+    "eyebrow": "Portfolio & Performance",
+    "titleLine1": "Our",
+    "titleLine2": "Success Cases.",
+    "descLine1": "마켓발란스㈜의 프로젝트와 수행 실적을 투명하게 공개합니다.",
+    "descLine2": "환경, 에너지, IT 등 다양한 산업군에서의 혁신적인 성과를 확인하세요."
+  },
+  "breadcrumb": {
+    "ariaLabel": "현재 위치",
+    "current": "Portfolio"
+  },
+  "record": {
+    "eyebrow": "Performance",
+    "title": "Business Record",
+    "descLead": "글로벌 비즈니스의 성공과 파트너십을 증명하는",
+    "descEmphasis": "마켓발란스의 주요 프로젝트 실적입니다.",
+    "fiscalYear": "FY 2025",
+    "currentProjects": "Current Projects"
+  },
+  "filters": {
+    "ariaLabel": "실적 분류",
+    "all": "전체 View",
+    "overseas": "해외 사업",
+    "domestic": "국내 사업",
+    "seminar": "세미나/교육",
+    "env": "환경산업",
+    "energy": "신재생에너지",
+    "consumer": "소비재/유통",
+    "it": "Trend IT",
+    "material": "신소재/산업재"
+  },
+  "table": {
+    "category": "분류",
+    "categorySub": "Category",
+    "industry": "산업분야",
+    "industrySub": "Industry",
+    "title": "프로젝트명",
+    "titleSub": "Project Title",
+    "client": "발주처",
+    "clientSub": "Client",
+    "detailHint": "Detail View Open",
+    "orderingOrg": "Ordering Org.",
+    "industryLabel": "Industry",
+    "empty": "해당 분류의 실적이 없습니다."
+  },
+  "categories": {
+    "exhibitionOverseas": "전시회(해외)",
+    "meetingOverseas": "상담회(해외)",
+    "meetingDomestic": "상담회(국내)",
+    "seminar": "세미나(교육)"
+  },
+  "industries": {
+    "material": "신소재·산업재",
+    "consumer": "소비재·유통",
+    "env": "환경산업",
+    "energy": "에너지",
+    "it": "IT 솔루션"
+  },
+  "modal": {
+    "performance": "{year} Performance",
+    "orderingOrg": "Ordering Org.",
+    "focusArea": "Focus Area",
+    "sector": "Sector",
+    "nationwide": "국내 전역",
+    "caseVerified": "Case Verified",
+    "consult": "상담 신청하기",
+    "close": "닫기"
+  },
+  "cta": {
+    "highlight": "Our Track Record",
+    "titleLead": "성공적인",
+    "titleHighlight": "비즈니스 실적",
+    "titleMid": ",",
+    "titleTail": "마켓발란스가 증명합니다.",
+    "description": "다양한 글로벌 프로젝트 수행 경험을 바탕으로 귀사의 비즈니스 성과를 극대화합니다."
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "2025 대한민국 고기능소재위크 해외바이어 초청 상담회 운영 대행",
+      "client": "㈜메쎄이상",
+      "location": "",
+      "tags": ["바이어 매칭", "소재위크"]
+    },
+    {
+      "id": 2,
+      "title": "제1회 한국산업단지 수출박람회 해외바이어 초청 수출상담회",
+      "client": "한국산업단지공단, (사)한국산업단지경영자연합회",
+      "location": "",
+      "tags": ["수출박람회", "산업단지"]
+    },
+    {
+      "id": 3,
+      "title": "2025 중국 상하이 국제환경보호박람회 한국관 참여기업 마케팅 컨설팅 용역",
+      "client": "한국환경보전원",
+      "location": "중국 상하이",
+      "tags": ["IE EXPO China", "환경", "컨설팅"]
+    },
+    {
+      "id": 4,
+      "title": "ENVEX(국제환경산업기술&그린에너지전) – 한중기술협력 교류회",
+      "client": "한국환경보전원",
+      "location": "",
+      "tags": ["MICE", "한중협력"]
+    },
+    {
+      "id": 5,
+      "title": "독일 인터솔라 유럽 – 신재생에너지협회 공동관 바이어 매칭 상담회",
+      "client": "한국신재생에너지협회",
+      "location": "독일 뮌헨",
+      "tags": ["인터솔라", "신재생"]
+    },
+    {
+      "id": 6,
+      "title": "제7회 한중수출박람회 및 순회설명회 운영지원",
+      "client": "한국환경산업협회",
+      "location": "중국",
+      "tags": ["한중수출", "순회설명회"]
+    },
+    {
+      "id": 7,
+      "title": "2025 신재생에너지 ODA 사업개발 및 추진전략 특강",
+      "client": "한국신재생에너지협회",
+      "location": "",
+      "tags": ["ODA", "특강"]
+    },
+    {
+      "id": 8,
+      "title": "제4차 무역사절단(중국 상하이)",
+      "client": "전북특별자치도경제통상진흥원",
+      "location": "중국 상하이",
+      "tags": ["무역사절단", "소비재"]
+    },
+    {
+      "id": 9,
+      "title": "신재생에너지 동남아(인도네시아) 시장 개척단",
+      "client": "한국에너지공단, 한국신재생에너지협회",
+      "location": "인도네시아",
+      "tags": ["시장개척단", "신재생"]
+    },
+    {
+      "id": 10,
+      "title": "2025 글로벌 신재생에너지 경제 전망 및 대응 전략",
+      "client": "한국신재생에너지협회",
+      "location": "",
+      "tags": ["전망 세미나", "신재생"]
+    },
+    {
+      "id": 11,
+      "title": "유망 신기술·신제품 보유기업 발굴 및 지원사업- 해외진출 컨설팅",
+      "client": "한국산업단지공단",
+      "location": "",
+      "tags": ["컨설팅", "환경"]
+    },
+    {
+      "id": 12,
+      "title": "유망 신기술·신제품 보유기업 해외 바이어 연계 컨설팅 용역",
+      "client": "한국산업단지공단",
+      "location": "",
+      "tags": ["IT", "바이어 연계"]
+    }
+  ]
+}
