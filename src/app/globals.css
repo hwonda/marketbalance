@@ -32,10 +32,6 @@
   --text-h1: 3rem;
   --text-display: 4rem;
 
-  /* Temporary aliases for pages that have not been rebuilt yet. */
-  --font-display: var(--font-sans);
-  --color-navy: #004870;
-  --color-brand-orange: #f05820;
 }
 
 @layer base {
