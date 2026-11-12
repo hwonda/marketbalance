@@ -40,15 +40,19 @@ const COLORS = {
   ink: "#201820",
 };
 
-const FONT = '600 13px "Wanted Sans Variable", "Wanted Sans", sans-serif';
+const FONT_STACK = '"Wanted Sans Variable", "Wanted Sans", sans-serif';
+const FONT = `600 13px ${FONT_STACK}`;
+/** Below this map width labels shrink so neighbouring regions don't collide on phones. */
+const NARROW_WIDTH = 560;
+const NARROW_FONT = `600 11px ${FONT_STACK}`;
 
 /** Where each region's name sits relative to its anchor, so labels clear each other and the lines. */
 const LABEL_PLACEMENT: Record<RegionKey, { align: CanvasTextAlign; x: number; y: number }> = {
   asia: { align: "center", x: 0, y: 16 },
-  europe: { align: "left", x: 9, y: -10 },
+  europe: { align: "left", x: 8, y: 13 },
   middleEast: { align: "center", x: 0, y: 16 },
   cis: { align: "center", x: 0, y: -14 },
-  northAmerica: { align: "center", x: 0, y: -14 },
+  northAmerica: { align: "center", x: 0, y: 16 },
   oceania: { align: "center", x: 0, y: 16 },
 };
 
@@ -136,6 +140,8 @@ export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: N
     }
     overlay.addFeature(new Feature({ geometry: new Point(office), kind: "office" }));
 
+    // Set by `fit` from the rendered width; read by the label styles.
+    let narrow = false;
     const overlayStyle = (feature: FeatureLike) => {
       switch (feature.get("kind")) {
         case "route":
@@ -157,7 +163,7 @@ export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: N
             }),
             text: new Text({
               text: headOfficeLabel,
-              font: FONT,
+              font: narrow ? NARROW_FONT : FONT,
               fill: new Fill({ color: COLORS.ink }),
               stroke: new Stroke({ color: "#ffffff", width: 3 }),
               textAlign: "left",
@@ -171,7 +177,7 @@ export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: N
           return new Style({
             text: new Text({
               text: labels[key],
-              font: FONT,
+              font: narrow ? NARROW_FONT : FONT,
               fill: new Fill({ color: COLORS.ink }),
               stroke: new Stroke({ color: "#ffffff", width: 3 }),
               textAlign: place.align,
@@ -196,7 +202,13 @@ export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: N
 
     const fit = () => {
       const size = map.getSize();
-      if (size && size[0] > 0) map.getView().fit(extent, { size, padding: [8, 8, 8, 8] });
+      if (!size || size[0] === 0) return;
+      map.getView().fit(extent, { size, padding: [8, 8, 8, 8] });
+      const nextNarrow = size[0] < NARROW_WIDTH;
+      if (nextNarrow !== narrow) {
+        narrow = nextNarrow;
+        overlayLayer.changed();
+      }
     };
     map.on("change:size", fit);
     fit();
