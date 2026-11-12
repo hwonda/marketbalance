@@ -184,7 +184,7 @@ export default function WorksPage() {
           {rows.length === 0 ? (
             <p className="border-b border-line py-12 text-ink-soft">{t.empty}</p>
           ) : (
-            <ul className="mt-6 border-t border-line lg:mt-0 lg:border-t-0">
+            <ul className="mt-6 grid gap-3 lg:mt-0 lg:block">
               {rows.map((work) => {
                 const record = text(work.id);
                 const open = openId === work.id;
@@ -192,14 +192,17 @@ export default function WorksPage() {
                 const place = record.location || t.domestic;
                 const category = works.categories[categoryOf(work)];
                 return (
-                  <li key={work.id} className="border-b border-line">
+                  <li
+                    key={work.id}
+                    className="overflow-hidden rounded-lg border border-line lg:overflow-visible lg:rounded-none lg:border-0 lg:border-b"
+                  >
                     <button
                       type="button"
                       aria-expanded={open}
                       aria-controls={panelId}
                       onClick={() => setOpenId(open ? null : work.id)}
                       className={cn(
-                        "grid w-full grid-cols-[minmax(0,1fr)_1.25rem] gap-x-4 gap-y-1 py-5 text-left transition-colors hover:bg-mist/70 lg:items-baseline lg:gap-6 lg:py-6",
+                        "grid w-full grid-cols-[minmax(0,1fr)_1.25rem] gap-x-4 gap-y-1 px-4 py-5 text-left transition-colors hover:bg-mist/70 lg:items-baseline lg:gap-6 lg:px-0 lg:py-6",
                         COLUMNS,
                       )}
                     >
@@ -236,7 +239,7 @@ export default function WorksPage() {
                         >
                           <dl
                             className={cn(
-                              "grid gap-x-6 gap-y-4 pt-1 pb-6 text-small sm:grid-cols-2 lg:grid",
+                              "grid gap-x-6 gap-y-4 px-4 pt-1 pb-6 text-small sm:grid-cols-2 lg:grid lg:px-0",
                               COLUMNS,
                             )}
                           >
