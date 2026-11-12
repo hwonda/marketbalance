@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Lets a second dev server run beside the main one (e.g. NEXT_DIST_DIR=.next-agent next dev -p 3200).
+  distDir: process.env.NEXT_DIST_DIR || ".next",
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

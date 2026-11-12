@@ -6,6 +6,7 @@ import LegacyHashRedirect from "@/components/LegacyHashRedirect";
 import { hasLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { I18nProvider } from "@/i18n/I18nProvider";
+import "wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.css";
 import "../globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://h200027.neullabs.kr";
@@ -70,7 +71,9 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
           <div className="min-h-screen flex flex-col font-sans">
             <LegacyHashRedirect />
             <Header />
-            <div className="flex-grow">{children}</div>
+            <div id="main" tabIndex={-1} className="flex-grow outline-none">
+              {children}
+            </div>
             <Footer />
           </div>
         </I18nProvider>

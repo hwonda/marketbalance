@@ -1,117 +1,94 @@
 @import "tailwindcss";
 
+/*
+ * Market Balance design tokens.
+ * Colours are taken from the logo: ink (lettering), orange (M), blue (B).
+ * Orange is only for the primary action; blue for links and selected state;
+ * deep blue for large quiet surfaces. Rules separate table rows only.
+ */
 @theme {
-  --font-sans: "Inter", "Noto Sans KR", sans-serif;
-  --font-display: "Space Grotesk", "Noto Sans KR", sans-serif;
-  --color-navy: #0c1a35;
-  --color-brand-orange: #e84b3a;
+  --font-sans: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Malgun Gothic", sans-serif;
+
+  --color-ink: #201820;
+  --color-ink-soft: #5c535c;
+  --color-ink-faint: #8a828a;
+  --color-paper: #ffffff;
+  --color-mist: #f6f5f7;
+  --color-line: #e5e2e5;
+  --color-orange: #f05820;
+  --color-orange-deep: #d9480f;
+  --color-blue: #0078c0;
+  --color-blue-deep: #004870;
+
+  /* Type scale (px): 14 16 17 21 24 30 36 48 64 */
+  --text-caption: 0.875rem;
+  --text-small: 1rem;
+  --text-body: 1.0625rem;
+  --text-lead: 1.3125rem;
+  --text-h4: 1.5rem;
+  --text-h3: 1.875rem;
+  --text-h2: 2.25rem;
+  --text-h1: 3rem;
+  --text-display: 4rem;
+
+  /* Temporary aliases for pages that have not been rebuilt yet. */
+  --font-display: var(--font-sans);
+  --color-navy: #004870;
+  --color-brand-orange: #f05820;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
   body {
-    background-color: var(--color-white);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
     font-family: var(--font-sans);
-    color: #1a1a2e;
+    font-size: var(--text-body);
+    line-height: 1.75;
     word-break: keep-all;
-    overflow-x: hidden;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-blue);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  ::selection {
+    background: #cfe6f5;
   }
 }
 
-:root {
-  --navy: #0c1a35;
-  --navy-light: #13274f;
-  --green: #2d7a5f;
-  --orange: #e84b3a;
-  --blue: #2563eb;
-  --paper: #f5f2ed;
-}
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--navy);
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--orange);
-}
-@keyframes shimmer {
-  0% {
-    transform: translate(-100%, -100%) rotate(45deg);
-  }
-  to {
-    transform: translate(100%, 100%) rotate(45deg);
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
   }
 }
-@keyframes sparkle {
-  0%,
-  to {
-    opacity: 0;
-    transform: scale(0);
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-}
-@keyframes float {
-  0%,
-  to {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-@keyframes glow-red {
-  0%,
-  to {
-    filter: drop-shadow(0 0 5px #e84b3a4d);
-    opacity: 0.15;
-    transform: translate(-50%, -50%) scale(2.8);
-  }
-  50% {
-    filter: drop-shadow(0 0 25px #e84b3ab3);
-    opacity: 0.35;
-    transform: translate(-50%, -50%) scale(3);
-  }
-}
-@keyframes pulse-glow-red {
-  0%,
-  to {
-    filter: drop-shadow(0 0 6px #e84b3a80);
-    opacity: 0.95;
-    transform: scale(1);
-  }
-  50% {
-    filter: drop-shadow(0 0 15px #e84b3acc);
-    opacity: 1;
-    transform: scale(1.05);
-  }
-}
-@keyframes border-glow-red {
-  0%,
-  to {
-    border-color: #e84b3a66;
-    box-shadow: 0 0 12px #e84b3a26;
-  }
-  50% {
-    border-color: #e84b3acc;
-    box-shadow: 0 0 25px #e84b3a66;
-  }
-}
-@keyframes card-shine {
-  0% {
-    transform: translate(-150%) skew(-30deg);
-  }
-  20%,
-  to {
-    transform: translate(150%) skew(-30deg);
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
