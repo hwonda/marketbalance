@@ -1,354 +1,213 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "@/i18n/Link";
+import { useEffect, useState } from "react";
 import { usePathname } from "@/i18n/usePathname";
 import { useDictionary } from "@/i18n/I18nProvider";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { motion, AnimatePresence } from "motion/react";
-import { ChevronDown } from "lucide-react";
-import { cn } from "@/lib/cn";
+import Link from "@/i18n/Link";
 import { notifyHashNav } from "@/hooks/useHashScroll";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import Container from "@/components/ui/Container";
+import { ButtonLink } from "@/components/ui/Button";
+import { cn } from "@/lib/cn";
 
-type SubItem = { name: string; path: string; hash?: string };
-type NavItem = { name: string; path: string; subItems?: SubItem[] };
-
-/** The original bundle ships this menu behind a flag that is always on. */
-const SHOW_BUYER_MATCHING = true;
-
-/** Sub-menu links target a section: `/about` + `vision` -> `/about#vision`. */
-function subItemHref(item: SubItem) {
-  const [base, pathHash] = item.path.split("#");
-  const hash = item.hash || pathHash;
-  return hash ? `${base}#${hash}` : base;
-}
+type NavItem = { label: string; href: string; children?: { label: string; href: string }[] };
 
 export default function Header() {
-  const [n, setN] = useState(false);
-  const [r, setR] = useState(false);
-  const [u, setU] = useState<string | null>(null);
   const pathname = usePathname();
-  const { nav, common } = useDictionary();
-  const x: NavItem[] = [
+  const { nav, common, metadata } = useDictionary();
+  // The menu remembers the page it was opened on, so navigating anywhere closes it.
+  const [openedOn, setOpenedOn] = useState<string | null>(null);
+  const open = openedOn === pathname;
+  const setOpen = (next: boolean) => setOpenedOn(next ? pathname : null);
+  const [scrolled, setScrolled] = useState(false);
+
+  const items: NavItem[] = [
     {
-      name: nav.about,
-      path: "/about",
-      subItems: [
-        {
-          name: nav.aboutIntro,
-          path: "/about",
-          hash: "vision",
-        },
-        {
-          name: nav.aboutHistory,
-          path: "/about#history",
-        },
+      label: nav.about,
+      href: "/about",
+      children: [
+        { label: nav.aboutIntro, href: "/about#vision" },
+        { label: nav.aboutHistory, href: "/about#history" },
       ],
     },
     {
-      name: nav.service,
-      path: "/services",
-      subItems: [
-        {
-          name: nav.serviceExhibition,
-          path: "/services#exhibition",
-        },
-        {
-          name: nav.serviceMarketing,
-          path: "/services#marketing",
-        },
-        {
-          name: nav.serviceMice,
-          path: "/services#mice",
-        },
-        {
-          name: nav.serviceBuyer,
-          path: "/services#buyer",
-        },
-        {
-          name: nav.serviceTrade,
-          path: "/services#trade",
-        },
+      label: nav.service,
+      href: "/services",
+      children: [
+        { label: nav.serviceExhibition, href: "/services#exhibition" },
+        { label: nav.serviceBuyer, href: "/services#buyer" },
+        { label: nav.serviceMarketing, href: "/services#marketing" },
+        { label: nav.serviceMice, href: "/services#mice" },
+        { label: nav.serviceTrade, href: "/services#trade" },
       ],
     },
+    { label: nav.portfolio, href: "/works" },
+    { label: nav.buyerMatching, href: "/buyer-matching" },
     {
-      name: nav.portfolio,
-      path: "/works",
-      subItems: [
-        {
-          name: nav.portfolioWorks,
-          path: "/works",
-        },
+      label: nav.contact,
+      href: "/contact-detail",
+      children: [
+        { label: nav.contactLocation, href: "/contact-detail#location" },
+        { label: nav.contactBrochure, href: "/contact-detail#brochure" },
       ],
     },
-    {
-      name: nav.contact,
-      path: "/contact-detail",
-      subItems: [
-        {
-          name: nav.contactLocation,
-          path: "/contact-detail#location",
-        },
-        {
-          name: nav.contactBrochure,
-          path: "/contact-detail#brochure",
-        },
-      ],
-    },
-    {
-      name: nav.qna,
-      path: "/contact",
-      subItems: [
-        {
-          name: nav.qnaInquiry,
-          path: "/contact#qna",
-        },
-      ],
-    },
-    ...(SHOW_BUYER_MATCHING
-      ? [
-          {
-            name: nav.buyerMatching,
-            path: "/buyer-matching",
-          },
-        ]
-      : []),
   ];
+
   useEffect(() => {
-    const y = () => setN(window.scrollY > 40);
-    window.addEventListener("scroll", y, {
-      passive: true,
-    });
-    return () => window.removeEventListener("scroll", y);
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Keep the page behind the mobile menu from scrolling.
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+
   return (
     <>
-      <header id="gnb" className={cn("fixed top-0 left-0 right-0 z-[1000] transition-all duration-500")}>
-        <div
-          className={cn(
-            "mx-auto transition-all duration-500",
-            n ? "py-4 px-6 md:px-8 max-w-[1200px]" : "py-6 px-10 max-w-[1440px]",
-          )}
-        >
-          <div
-            className={cn(
-              "flex items-center justify-between rounded-full transition-all duration-500",
-              n
-                ? "bg-white/70 backdrop-blur-md shadow-lg border border-white/40 px-6 h-16"
-                : "bg-white/40 backdrop-blur-sm border border-white/30 px-8 h-20",
-            )}
-          >
-            <Link href="/" className="flex items-center gap-3 no-underline shrink-0 group">
-              <img
-                src="/image/logo/logo.png"
-                alt="Market Balance"
-                className={cn(
-                  "transition-transform group-hover:scale-105",
-                  n ? "h-8 md:h-14" : "h-12 md:h-20",
-                )}
-                style={{
-                  objectFit: "contain",
-                }}
-              />
-            </Link>
-            <nav className="hidden lg:flex items-center">
-              <ul className="flex items-center list-none p-0 m-0 gap-6">
-                {x.map((y) => {
-                  const b = pathname === y.path;
-                  return (
-                    <li
-                      key={y.name}
-                      className="relative"
-                      onMouseEnter={() => setU(y.name)}
-                      onMouseLeave={() => setU(null)}
-                    >
-                      <Link
-                        href={y.path}
-                        className={cn(
-                          "relative flex items-center gap-1.5 py-4 font-sans font-medium hover:text-black transition-colors",
-                        )}
-                        style={{
-                          fontSize: "1rem",
-                          color: b ? "#000" : "rgba(0,0,0,0.6)",
-                        }}
-                      >
-                        {y.name}
-                        {y.subItems && (
-                          <ChevronDown
-                            size={14}
-                            className={cn(
-                              "transition-transform duration-300 opacity-60",
-                              u === y.name && "rotate-180 opacity-100",
-                            )}
-                          />
-                        )}
-                        {b && (
-                          <motion.div
-                            layoutId="navUnderline"
-                            className="absolute -bottom-1 left-0 right-0 h-[3px] rounded-full"
-                            style={{
-                              backgroundColor: "#E84B3A",
-                            }}
-                          />
-                        )}
-                      </Link>
-                      {
-                        <AnimatePresence>
-                          {y.subItems && u === y.name && (
-                            <motion.ul
-                              initial={{
-                                opacity: 0,
-                                y: 15,
-                              }}
-                              animate={{
-                                opacity: 1,
-                                y: 0,
-                              }}
-                              exit={{
-                                opacity: 0,
-                                y: 15,
-                              }}
-                              transition={{
-                                duration: 0.3,
-                                ease: "easeOut",
-                              }}
-                              className="absolute top-full -left-4 w-max min-w-[220px] bg-white/95 backdrop-blur-md border border-black/5 rounded-2xl shadow-[0_30px_60px_rgba(0,0,0,0.1)] py-4 mt-1 flex flex-col list-none z-50 overflow-hidden"
-                            >
-                              {y.subItems.map((w) => (
-                                <li key={w.name} className="relative z-10">
-                                  <Link
-                                    href={subItemHref(w)}
-                                    onClick={notifyHashNav}
-                                    className="block px-6 py-3 text-black/60 hover:text-black hover:bg-black/5 transition-all no-underline"
-                                    style={{
-                                      fontSize: "0.9rem",
-                                      fontWeight: 500,
-                                    }}
-                                  >
-                                    {w.name}
-                                  </Link>
-                                </li>
-                              ))}
-                            </motion.ul>
-                          )}
-                        </AnimatePresence>
-                      }
-                    </li>
-                  );
-                })}
-              </ul>
-              <LanguageSwitcher className="ml-6" />
-            </nav>
-            <button
-              type="button"
-              onClick={() => setR(!r)}
-              aria-label={r ? common.menuClose : common.menuOpen}
-              aria-expanded={r}
-              className="lg:hidden flex flex-col gap-1.5 p-2 bg-transparent border-none cursor-pointer"
-            >
-              <motion.div
-                initial={false}
-                animate={{
-                  rotate: r ? 45 : 0,
-                  y: r ? 8 : 0,
-                  backgroundColor: "#000000",
-                }}
-                className="block w-6 h-0.5 rounded-full"
-              />
-              <motion.div
-                animate={{
-                  opacity: r ? 0 : 1,
-                }}
-                className="block w-6 h-0.5 bg-black rounded-full"
-              />
-              <motion.div
-                initial={false}
-                animate={{
-                  rotate: r ? -45 : 0,
-                  y: r ? -8 : 0,
-                  backgroundColor: "#000000",
-                }}
-                className="block w-6 h-0.5 rounded-full"
-              />
-            </button>
-          </div>
-        </div>
-      </header>
-      {
-        <AnimatePresence>
-          {r && (
-            <motion.nav
-              initial={{
-                opacity: 0,
-                y: -20,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: -20,
-              }}
-              className="fixed left-0 right-0 z-[999] backdrop-blur-xl border-b px-8 py-6 max-h-[calc(100vh-75px)] overflow-y-auto"
-              style={{
-                top: "75px",
-                backgroundColor: "rgba(12, 26, 53, 0.98)",
-                borderColor: "rgba(255,255,255,0.1)",
-              }}
-            >
-              <ul className="flex flex-col gap-1 list-none p-0 m-0">
-                {x.map((y) => (
-                  <li key={y.name} className="flex flex-col">
-                    <div
-                      className="flex items-center justify-between py-3 font-display font-medium no-underline"
-                      style={{
-                        fontSize: "0.95rem",
-                        letterSpacing: "0.12em",
-                        color: "rgba(255,255,255,0.8)",
-                        borderBottom: y.subItems ? "none" : "1px solid rgba(255,255,255,0.05)",
-                      }}
-                    >
-                      <Link
-                        href={y.path}
-                        onClick={() => setR(false)}
-                        className="flex items-center gap-3 text-inherit no-underline"
-                      >
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#E84B3A]" />
-                        {y.name}
-                      </Link>
-                    </div>
-                    {y.subItems && (
-                      <ul className="flex flex-col list-none pl-7 pb-1 border-b border-white/5">
-                        {y.subItems.map((b) => (
-                          <li key={b.name}>
+      <a
+        href="#main"
+        className="fixed top-2 left-2 z-[1100] -translate-y-24 rounded bg-ink px-4 py-2 text-small text-white focus:translate-y-0"
+      >
+        {common.skipToContent}
+      </a>
+      <header
+        className={cn(
+          "fixed inset-x-0 top-0 z-[1000] border-b bg-paper transition-[border-color] duration-200",
+          scrolled || open ? "border-line" : "border-transparent",
+        )}
+      >
+        <Container className="flex h-[72px] items-center justify-between gap-6">
+          <Link href="/" className="shrink-0" aria-label={metadata.appName}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/image/logo/logo.png" alt={metadata.logoAlt} className="h-12 w-auto md:h-14" />
+          </Link>
+
+          <nav aria-label={nav.primary} className="hidden h-full lg:block">
+            <ul className="flex h-full items-center gap-1">
+              {items.map((item) => (
+                <li key={item.href} className="group relative flex h-full items-center">
+                  <Link
+                    href={item.href}
+                    aria-current={isCurrent(item.href) ? "page" : undefined}
+                    className={cn(
+                      "relative flex h-full items-center px-3 text-small font-semibold transition-colors",
+                      isCurrent(item.href) ? "text-blue" : "text-ink hover:text-blue",
+                    )}
+                  >
+                    {item.label}
+                    {isCurrent(item.href) && <span className="absolute inset-x-3 bottom-0 h-[3px] bg-blue" />}
+                  </Link>
+                  {item.children && (
+                    <div className="invisible absolute top-full left-0 pt-2 opacity-0 transition-opacity duration-150 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                      <ul className="min-w-56 rounded-lg border border-line bg-paper py-2 shadow-[0_12px_32px_rgba(32,24,32,0.12)]">
+                        {item.children.map((child) => (
+                          <li key={child.href}>
                             <Link
-                              href={subItemHref(b)}
-                              onClick={() => {
-                                setR(false);
-                                notifyHashNav();
-                              }}
-                              className="block py-1.5 text-white/40 hover:text-[#E84B3A] no-underline transition-colors"
-                              style={{
-                                fontSize: "0.85rem",
-                              }}
+                              href={child.href}
+                              onClick={notifyHashNav}
+                              className="block px-4 py-2.5 text-small text-ink-soft transition-colors hover:bg-mist hover:text-ink"
                             >
-                              {b.name}
+                              {child.label}
                             </Link>
                           </li>
                         ))}
                       </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6 flex">
-                <LanguageSwitcher tone="dark" onNavigate={() => setR(false)} />
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="hidden items-center gap-4 lg:flex">
+            <LanguageSwitcher />
+            <ButtonLink href="/contact" className="min-h-11 px-5">
+              {nav.inquiryAction}
+            </ButtonLink>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setOpen(!open)}
+            aria-label={open ? common.menuClose : common.menuOpen}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            className="-mr-2 flex size-11 items-center justify-center lg:hidden"
+          >
+            <span className="relative block h-3.5 w-6">
+              <span
+                className={cn(
+                  "absolute left-0 h-0.5 w-6 bg-ink transition-transform duration-200",
+                  open ? "top-1.5 rotate-45" : "top-0",
+                )}
+              />
+              <span
+                className={cn(
+                  "absolute left-0 h-0.5 w-6 bg-ink transition-transform duration-200",
+                  open ? "top-1.5 -rotate-45" : "top-3",
+                )}
+              />
+            </span>
+          </button>
+        </Container>
+
+        {open && (
+          <div
+            id="mobile-menu"
+            className="h-[calc(100dvh-72px)] overflow-y-auto border-t border-line bg-paper pb-10 lg:hidden"
+          >
+            <Container>
+              <nav aria-label={nav.primary}>
+                <ul>
+                  {items.map((item) => (
+                    <li key={item.href} className="border-b border-line py-4">
+                      <Link
+                        href={item.href}
+                        aria-current={isCurrent(item.href) ? "page" : undefined}
+                        className={cn("block py-1 text-h4 font-bold", isCurrent(item.href) && "text-blue")}
+                      >
+                        {item.label}
+                      </Link>
+                      {item.children && (
+                        <ul className="mt-1 grid gap-0.5">
+                          {item.children.map((child) => (
+                            <li key={child.href}>
+                              <Link
+                                href={child.href}
+                                onClick={() => {
+                                  setOpen(false);
+                                  notifyHashNav();
+                                }}
+                                className="block py-2 text-small text-ink-soft"
+                              >
+                                {child.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <div className="mt-8 flex flex-col gap-4">
+                <ButtonLink href="/contact" className="w-full">
+                  {nav.inquiryAction}
+                </ButtonLink>
+                <LanguageSwitcher onNavigate={() => setOpen(false)} />
               </div>
-            </motion.nav>
-          )}
-        </AnimatePresence>
-      }
+            </Container>
+          </div>
+        )}
+      </header>
     </>
   );
 }

@@ -10,26 +10,29 @@
     "logoAlt": "Market Balance logo"
   },
   "nav": {
-    "about": "ABOUT",
+    "about": "About",
     "aboutIntro": "Company",
     "aboutHistory": "History",
-    "service": "SERVICE",
-    "serviceExhibition": "Overseas Exhibition Support",
-    "serviceMarketing": "SME Export Marketing",
-    "serviceMice": "Business Event Planning & Operation",
-    "serviceBuyer": "Overseas Buyer Sourcing & Matching",
-    "serviceTrade": "Trade Agency",
-    "portfolio": "PORTFOLIO",
-    "portfolioWorks": "Track Record",
-    "contact": "CONTACT",
-    "contactLocation": "Location",
-    "contactBrochure": "Download Brochure",
-    "qna": "INQUIRY",
-    "qnaInquiry": "Inquiry",
-    "buyerMatching": "BUYER MATCHING"
+    "service": "Services",
+    "serviceExhibition": "Overseas exhibitions",
+    "serviceMarketing": "SME export marketing",
+    "serviceMice": "Business events",
+    "serviceBuyer": "Buyer sourcing & matching",
+    "serviceTrade": "Trade agency",
+    "portfolio": "Track record",
+    "portfolioWorks": "Track record",
+    "contact": "Location",
+    "contactLocation": "Location & directions",
+    "contactBrochure": "Company brochure",
+    "qna": "Consultation",
+    "qnaInquiry": "Consultation",
+    "buyerMatching": "Buyer matching",
+    "inquiryAction": "Request a consultation",
+    "menu": "Menu",
+    "primary": "Main menu"
   },
   "footer": {
-    "description": "Market Balance combines hands-on field experience with a global network, delivering the strategic balance and results your business needs to grow steadily and boldly in the world market.",
+    "description": "We handle overseas exhibitions, buyer sourcing and matching, and export marketing for Korean SMEs — from planning to contract.",
     "addressLine1": "#911, 398 Simin-daero, Dongan-gu, Anyang-si, Gyeonggi-do, Korea",
     "addressLine2": "The Live D-Haute, Indeogwon Station",
     "businessInfo": "Business Reg. No. 521-88-03439  |  CEO: Lee Su Yeon",
@@ -50,7 +53,22 @@
       "Business Event",
       "Buyer Matching",
       "Trade Agent"
-    ]
+    ],
+    "menuTitle": "Pages",
+    "contactTitle": "Contact",
+    "addressTitle": "Address",
+    "phoneLabel": "Office",
+    "mobileLabel": "Mobile",
+    "emailLabel": "Email",
+    "phone": "+82-31-425-9281",
+    "mobile": "+82-10-8838-9281",
+    "email": "marketbalancekorea@gmail.com",
+    "companyName": "Market Balance Co., Ltd.",
+    "ceoLabel": "CEO",
+    "ceo": "Lee Su Yeon",
+    "bizNoLabel": "Business reg. no.",
+    "bizNo": "521-88-03439",
+    "directions": "Get directions"
   },
   "cta": {
     "consult": "Free Consultation",
@@ -62,6 +80,15 @@
   "common": {
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
-    "home": "HOME"
+    "home": "Home",
+    "domestic": "Korea",
+    "skipToContent": "Skip to content"
+  },
+  "contactBand": {
+    "title": "Not sure where to start overseas? Let's plan it together.",
+    "description": "From choosing the right trade fair to meeting buyers, tell us where you are and we'll suggest a way forward.",
+    "phoneLabel": "Call",
+    "phone": "+82-31-425-9281",
+    "action": "Request a consultation"
   }
 }
