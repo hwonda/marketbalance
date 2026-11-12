@@ -80,6 +80,21 @@
   }
 }
 
+/* OpenLayers street map: quiet grey tiles so the office marker is the only colour on the map. */
+@layer components {
+  .mb-map-tiles {
+    filter: grayscale(1) contrast(1.05) brightness(1.04);
+  }
+  .ol-attribution {
+    font-family: var(--font-sans);
+    font-size: 11px;
+  }
+  .ol-attribution.ol-uncollapsible {
+    border-top-left-radius: 6px;
+    background: rgb(255 255 255 / 0.85);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
