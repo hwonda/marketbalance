@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Global Business Partner",
+    "description": "Market Balance Co., Ltd. is a global partner for overseas exhibitions, export marketing, buyer sourcing and business event planning."
+  },
+  "hero": {
+    "eyebrow": "International Trade Consulting Group",
+    "titleLine1": "Balanced Success",
+    "titleLead": "in the",
+    "titleHighlight": "Global Market",
+    "descLines": [
+      "Your overseas marketing partner, backed by experts in Korea and abroad.",
+      "From exhibitions to buyer sourcing and export marketing,",
+      "we stay with you from planning and execution to results."
+    ],
+    "ctaServices": "Explore Services",
+    "ctaContact": "Contact Us"
+  },
+  "strengths": {
+    "eyebrow": "About Market Balance",
+    "titleLead": "An",
+    "titleHighlight": "export marketing",
+    "titleTail": "partner proven by results",
+    "srTitle": "Capabilities and strengths",
+    "descLead": "Market Balance brings together professionals with real field experience in Korea and abroad",
+    "descTail": "to deliver the most balanced strategy for successful overseas expansion.",
+    "items": [
+      {
+        "en": "Industry Experience",
+        "title": "22 Years in the Industry",
+        "sub": "Our CEO's seasoned expertise in\nexport marketing and exhibitions"
+      },
+      {
+        "en": "Global Network",
+        "title": "Partners in 20 Countries",
+        "sub": "Partner firms in key markets worldwide\nwith on-the-ground local support"
+      },
+      {
+        "en": "Managed Projects",
+        "title": "20+ Projects a Year",
+        "sub": "Reliable planning and operation of\nlarge national online and offline events"
+      },
+      {
+        "en": "Professional Workforce",
+        "title": "Specialists in Every Field",
+        "sub": "10+ years of hands-on experience\nand a dedicated team at all times"
+      }
+    ],
+    "cta": "View Strategy"
+  },
+  "services": {
+    "eyebrow": "Our Expertise",
+    "titleLead": "For successful global business,",
+    "titleHighlight": "integrated support solutions",
+    "items": [
+      {
+        "en": "Overseas Exhibition",
+        "title": "Overseas Exhibition Support",
+        "desc": "We support Korean companies through every step of exhibiting overseas — booth rental, stand construction, logistics and exhibition marketing — plus links to government support programs and national pavilion organization, all tailored to you."
+      },
+      {
+        "en": "Buyer Matching",
+        "title": "Buyer Sourcing & Matching",
+        "desc": "Systematic, ongoing export support for exhibitors and export-marketing participants, from buyer sourcing and matching to market research and export contracts."
+      },
+      {
+        "en": "Export Marketing",
+        "title": "SME Export Marketing",
+        "desc": "Marketing that strengthens the global competitiveness of SMEs, including the digital transformation (DX) of export operations through online channels."
+      },
+      {
+        "en": "Business Event Management",
+        "title": "Business Event Planning & Operation",
+        "desc": "End-to-end support for conferences, roadshows, seminars and corporate events for government bodies and companies in Korea and abroad — from planning and operation to follow-up. *Partnered with specialist Korean agencies when needed."
+      },
+      {
+        "en": "Trade Agency",
+        "title": "Trade Agency",
+        "desc": "Systematic, ongoing export services for exhibitors and export-marketing participants, from buyer sourcing and matching to market research and export contracts. *DX of export operations through online channels is planned."
+      }
+    ],
+    "cta": "View All Solutions"
+  },
+  "network": {
+    "eyebrow": "Global Network",
+    "titleLead": "Better service through",
+    "titleHighlight": "a strong network",
+    "descLead": "With regional headquarters in China, Southeast Asia, Russia, India and the Americas,",
+    "descTail": "and strong ties with marketing specialists in major overseas markets, we strive to serve you better.",
+    "mapAlt": "Market Balance global network map: USA, Germany, Middle East, India, China, Southeast Asia, Australia",
+    "regionsLabel": "Key regions",
+    "regions": ["USA", "Germany", "Middle East", "India", "China", "Southeast Asia", "Australia"]
+  },
+  "banner": {
+    "eyebrow": "Ready to Scale",
+    "titleLead": "Set the",
+    "titleHighlight": "global standard",
+    "titleTail": "",
+    "titleLine2": "with Market Balance.",
+    "desc": "With accumulated data and expert talent, we will faithfully serve as your bridge to successful overseas expansion."
+  }
+}

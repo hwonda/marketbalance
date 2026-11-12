@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Contact & Location",
+    "description": "Find Market Balance's address, contact details, company information and brochure."
+  },
+  "hero": {
+    "ariaLabel": "Page header",
+    "eyebrow": "Connect with us",
+    "titleLine1": "Contact",
+    "titleLine2": "Balance.",
+    "introLine1": "On your way beyond borders into global markets,",
+    "introLine2": "Market Balance will be the partner you can count on."
+  },
+  "breadcrumb": {
+    "ariaLabel": "Breadcrumb",
+    "current": "Contact"
+  },
+  "companyInfo": {
+    "eyebrow": "Company Info",
+    "title": "Location & Company Information",
+    "cards": {
+      "company": {
+        "label": "Company",
+        "value": "Market Balance Co., Ltd.",
+        "sub": "마켓발란스(주)"
+      },
+      "ceo": {
+        "label": "CEO",
+        "value": "Lee Su Yeon",
+        "sub": "Chief Executive Officer"
+      },
+      "registration": {
+        "label": "Company Details",
+        "value": "Founded: October 2024",
+        "sub": "Business Reg. No. 521-88-03439"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "031-425-9281",
+        "sub": "Mobile: 010-8838-9281"
+      },
+      "email": {
+        "label": "Email",
+        "value": "marketbalancekorea@gmail.com",
+        "sub": "Official Contact"
+      },
+      "address": {
+        "label": "Address",
+        "value": "398 Simin-daero, Dongan-gu, Anyang",
+        "sub": "#911, The Live D-Haute"
+      }
+    }
+  },
+  "location": {
+    "mapAlt": "Map to Market Balance — The Live D-Haute near Indeogwon Station",
+    "mapCaption": "Location Map.",
+    "addressLabel": "Address",
+    "addressLine": "#911, 398 Simin-daero, Dongan-gu, Anyang-si, Gyeonggi-do",
+    "addressDetail": "(Pyeongchon-dong, The Live D-Haute, Indeogwon Station)",
+    "transitLabel": "Public Transit",
+    "transitStation": "Indeogwon Station, Exit 4",
+    "transitWalk": "(10 min walk)"
+  },
+  "brochure": {
+    "eyebrow": "Resource Download",
+    "badge": "Market Balance Brochure",
+    "title": "Download Our Brochure",
+    "description": "See Market Balance's solutions and our track record of successful global projects.",
+    "kicker": "Resource Center",
+    "download": "Download PDF",
+    "unavailableKicker": "Coming Soon",
+    "unavailable": "Not available yet"
+  },
+  "cta": {
+    "highlight": "Get in Touch",
+    "titleLead": "Take the",
+    "titleHighlight": "first step",
+    "titleAfterHighlight": " into global markets — ",
+    "titleTail": "talk to us today.",
+    "description": "If you have any questions or need a consultation, feel free to reach out anytime."
+  }
+}
