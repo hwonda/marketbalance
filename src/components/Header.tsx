@@ -9,6 +9,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Container from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
+import { withBasePath } from "@/lib/basePath";
 
 type NavItem = { label: string; href: string; children?: { label: string; href: string }[] };
 
@@ -103,7 +104,7 @@ export default function Header() {
         <Container className="flex h-[72px] items-center justify-between gap-6">
           <Link href="/" className="shrink-0" aria-label={metadata.appName}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/image/logo/logo.png" alt={metadata.logoAlt} className="h-12 w-auto md:h-14" />
+            <img src={withBasePath("/image/logo/logo.png")} alt={metadata.logoAlt} className="h-12 w-auto md:h-14" />
           </Link>
 
           <nav aria-label={nav.primary} className="hidden h-full lg:block">

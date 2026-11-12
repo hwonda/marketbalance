@@ -8,8 +8,9 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { I18nProvider } from "@/i18n/I18nProvider";
 import "wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.css";
 import "../globals.css";
+import { BASE_PATH, withBasePath } from "@/lib/basePath";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://h200027.neullabs.kr";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://marketbalance.vercel.app";
 const OG_LOCALE = { ko: "ko_KR", en: "en_US" } as const;
 
 export function generateStaticParams() {
@@ -26,31 +27,33 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
     title: m.title,
     description: m.description,
     applicationName: m.appName,
+    // A sub-path build (e.g. /v2 preview) duplicates the live site, so keep it out of search results.
+    ...(BASE_PATH ? { robots: { index: false, follow: false } } : {}),
     authors: [{ name: m.appName }],
     alternates: {
-      canonical: `/${lang}`,
-      languages: Object.fromEntries(locales.map((l) => [l, `/${l}`])),
+      canonical: withBasePath(`/${lang}`),
+      languages: Object.fromEntries(locales.map((l) => [l, withBasePath(`/${l}`)])),
     },
     icons: {
-      icon: { url: "/image/logo/logo.png", type: "image/png" },
-      shortcut: "/image/logo/logo.png",
-      apple: "/image/logo/logo.png",
+      icon: { url: withBasePath("/image/logo/logo.png"), type: "image/png" },
+      shortcut: withBasePath("/image/logo/logo.png"),
+      apple: withBasePath("/image/logo/logo.png"),
     },
     appleWebApp: { capable: true, title: m.appName, statusBarStyle: "black-translucent" },
     openGraph: {
       type: "website",
       title: m.ogTitle,
       description: m.description,
-      url: `/${lang}`,
+      url: withBasePath(`/${lang}`),
       siteName: m.siteName,
       locale: OG_LOCALE[lang],
-      images: [{ url: "/image/logo/logo.png", width: 1200, height: 630, alt: m.logoAlt, type: "image/png" }],
+      images: [{ url: withBasePath("/image/logo/logo.png"), width: 1200, height: 630, alt: m.logoAlt, type: "image/png" }],
     },
     twitter: {
       card: "summary_large_image",
       title: m.twitterTitle,
       description: m.twitterDescription,
-      images: ["/image/logo/logo.png"],
+      images: [withBasePath("/image/logo/logo.png")],
     },
   };
 }

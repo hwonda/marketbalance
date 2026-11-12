@@ -3,6 +3,7 @@
 import { useDictionary } from "@/i18n/I18nProvider";
 import Link from "@/i18n/Link";
 import Container from "@/components/ui/Container";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Footer() {
   const { footer, nav, metadata } = useDictionary();
@@ -21,7 +22,7 @@ export default function Footer() {
       <Container className="grid gap-10 md:grid-cols-12">
         <div className="md:col-span-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/image/logo/logo.png" alt={metadata.logoAlt} className="h-14 w-auto" />
+          <img src={withBasePath("/image/logo/logo.png")} alt={metadata.logoAlt} className="h-14 w-auto" />
           <p className="mt-5 max-w-[32ch] text-ink-soft">{footer.description}</p>
         </div>
 

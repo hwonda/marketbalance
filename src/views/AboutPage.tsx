@@ -6,6 +6,7 @@ import PageIntro from "@/components/ui/PageIntro";
 import Section from "@/components/ui/Section";
 import ContactBand from "@/components/ui/ContactBand";
 import { NetworkMap, type RegionKey } from "@/components/maps";
+import { withBasePath } from "@/lib/basePath";
 
 export default function AboutPage() {
   const { about } = useDictionary();
@@ -24,7 +25,7 @@ export default function AboutPage() {
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/image/main/m-1.jpg"
+          src={withBasePath("/image/main/m-1.jpg")}
           alt={vision.photoAlt}
           className="mt-10 aspect-[16/9] w-full rounded-lg object-cover"
           loading="lazy"

@@ -12,6 +12,7 @@ import { Circle as CircleStyle, Fill, Stroke, Style, Text } from "ol/style";
 import type { FeatureLike } from "ol/Feature";
 import { fromLonLat, transformExtent } from "ol/proj";
 import "ol/ol.css";
+import { withBasePath } from "@/lib/basePath";
 import {
   HEAD_OFFICE,
   HIDDEN_COUNTRIES,
@@ -213,7 +214,7 @@ export default function NetworkMapImpl({ labels, headOfficeLabel, ariaLabel }: N
     map.on("change:size", fit);
     fit();
 
-    fetch("/data/countries-110m.json")
+    fetch(withBasePath("/data/countries-110m.json"))
       .then((response) => response.json())
       .then((topology) => {
         if (cancelled) return;

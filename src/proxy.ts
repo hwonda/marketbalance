@@ -28,5 +28,6 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   // Skip Next internals and anything with a file extension (images, favicon, brochure.pdf...).
-  matcher: ["/((?!_next|.*\\..*).*)"],
+  // "/" is listed on its own so the bare base path (e.g. /v2) is also redirected to a locale.
+  matcher: ["/", "/((?!_next|.*\\..*).*)"],
 };
