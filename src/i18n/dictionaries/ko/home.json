@@ -1,102 +1,141 @@
 {
   "meta": {
-    "title": "글로벌 비즈니스 파트너",
-    "description": "해외전시, 수출마케팅, 바이어 발굴 및 비즈니스 행사 기획 전문 글로벌 파트너 마켓발란스㈜입니다."
+    "title": "해외 전시·수출 대행",
+    "description": "마켓발란스㈜는 중소기업의 해외 전시회 참가, 바이어 발굴·매칭, 수출마케팅을 기획부터 계약까지 대행합니다."
   },
   "hero": {
-    "eyebrow": "International Trade Consulting Group",
-    "titleLine1": "Balanced Success",
-    "titleLead": "in the",
-    "titleHighlight": "Global Market",
-    "descLines": [
-      "국내외 전문인력이 함께하는 해외 마케팅 파트너.",
-      "전시회부터 바이어 발굴, 수출마케팅까지",
-      "기획에서 실행, 성과까지 끝까지 함께합니다."
-    ],
-    "ctaServices": "서비스 살펴보기",
-    "ctaContact": "문의하기"
+    "titleLine1": "해외 전시회 참가부터",
+    "titleLine2": "바이어 계약까지 대행합니다.",
+    "lead": "수출마케팅·전시 분야 22년 경력의 대표와 20여 개국 파트너가 전시회 선정, 부스 운영, 바이어 상담, 계약까지 맡습니다.",
+    "primary": "상담 신청하기",
+    "secondary": "사업 실적 보기"
   },
-  "strengths": {
-    "eyebrow": "About Market Balance",
-    "titleLead": "성과로 증명하는",
-    "titleHighlight": "수출 마케팅",
-    "titleTail": "파트너",
-    "srTitle": "수행 역량 및 강점",
-    "descLead": "마켓발란스㈜는 국내외 각 분야에서 실질적인 현장감각을 익힌 전문인력들이",
-    "descTail": "성공적인 해외 진출을 위한 가장 균형 잡힌 전략을 제시합니다.",
-    "items": [
+  "board": {
+    "title": "2025년 수행 실적",
+    "all": "12건 모두 보기",
+    "columns": {
+      "place": "지역",
+      "project": "사업",
+      "client": "발주처"
+    },
+    "rows": [
       {
-        "en": "Industry Experience",
-        "title": "22년의 업계 경력",
-        "sub": "수출마케팅·전시컨벤션 분야\n대표자의 숙련된 노하우"
+        "id": 3,
+        "place": "상하이",
+        "project": "IE expo China 한국관 참여기업 마케팅 컨설팅",
+        "client": "한국환경보전원"
       },
       {
-        "en": "Global Network",
-        "title": "20개국 글로벌 거점",
-        "sub": "전세계 주요 국가별 파트너사\n현지 대응 인프라 구축"
+        "id": 5,
+        "place": "뮌헨",
+        "project": "인터솔라 유럽 신재생에너지 공동관 바이어 상담회",
+        "client": "한국신재생에너지협회"
       },
       {
-        "en": "Managed Projects",
-        "title": "연간 20건 이상의 실적",
-        "sub": "국가 대형 온·오프라인 행사\n안정적인 기획과 운영 수행"
+        "id": 9,
+        "place": "인도네시아",
+        "project": "신재생에너지 동남아 시장개척단",
+        "client": "한국에너지공단 외 1곳"
       },
       {
-        "en": "Professional Workforce",
-        "title": "분야별 핵심 인력",
-        "sub": "실무 경력 10년 이상의 전문인력\n상시 전담 시스템 운영"
+        "id": 8,
+        "place": "상하이",
+        "project": "제4차 무역사절단",
+        "client": "전북특별자치도경제통상진흥원"
+      },
+      {
+        "id": 6,
+        "place": "중국",
+        "project": "제7회 한중수출박람회 및 순회설명회 운영",
+        "client": "한국환경산업협회"
+      },
+      {
+        "id": 2,
+        "place": "국내",
+        "project": "제1회 한국산업단지 수출박람회 해외바이어 수출상담회",
+        "client": "한국산업단지공단 외 1곳"
       }
-    ],
-    "cta": "View Strategy"
+    ]
   },
   "services": {
-    "eyebrow": "Our Expertise",
-    "titleLead": "성공적인 글로벌 비즈니스를 위한",
-    "titleHighlight": "통합 지원 솔루션",
+    "title": "하는 일",
+    "intro": "해외 진출에 필요한 다섯 가지 업무를 따로, 또는 묶어서 맡길 수 있습니다.",
+    "casesLabel": "사례",
+    "more": "자세히 보기",
     "items": [
       {
-        "en": "Overseas Exhibition",
-        "title": "해외전시 참가지원",
-        "desc": "국내 기업의 해외 전시회 참가를 처음부터 끝까지 지원합니다. 부스 임차·장치·운송·전시마케팅 서비스 제공과 더불어 정부 지원 연계 및 공동관 구성까지 맞춤형으로 대행합니다."
+        "anchor": "exhibition",
+        "title": "해외전시회 참가 지원",
+        "desc": "참가할 전시회 선정, 부스 임차·장치·운송, 현장 운영까지 대행합니다. 정부 지원사업 연계와 한국 공동관 구성도 맡습니다.",
+        "cases": [
+          "IE expo China 한국관",
+          "인터솔라 유럽 공동관"
+        ]
       },
       {
-        "en": "Buyer Matching",
-        "title": "해외바이어 발굴/매칭",
-        "desc": "전시회, 수출마케팅 참가사 대상 바이어 발굴·매칭, 시장조사, 수출계약까지 체계적이고 지속적인 수출업무 대행을 지원합니다."
+        "anchor": "buyer",
+        "title": "해외 바이어 발굴·매칭",
+        "desc": "산업별 바이어 데이터로 상대를 찾고 사전 수요를 확인한 뒤, 1:1 상담과 통역, 후속 계약까지 지원합니다.",
+        "cases": [
+          "고기능소재위크 해외바이어 상담회",
+          "한국산업단지 수출박람회"
+        ]
       },
       {
-        "en": "Export Marketing",
-        "title": "중소기업수출마케팅",
-        "desc": "온라인 채널 구축을 통한 수출업무 DX(Digital Transformation)화 추진 등 중소기업의 글로벌 경쟁력 강화를 위한 마케팅을 지원합니다."
+        "anchor": "marketing",
+        "title": "중소기업 수출마케팅",
+        "desc": "시장 조사와 진출 전략을 세우고 수출상담회, 무역사절단, 온라인 B2B 홍보로 해외 판로를 넓힙니다.",
+        "cases": [
+          "상하이 무역사절단",
+          "인도네시아 시장개척단"
+        ]
       },
       {
-        "en": "Business Event Management",
-        "title": "비즈니스 행사 기획/운영",
-        "desc": "정부 및 기관, 국내외 컨퍼런스, 로드쇼, 세미나, 각종 기업 행사 등의 기획부터 운영, 사후관리 등 총괄 지원합니다. *필요 시 한국전문기관 연계 지원을 통한 전문성 확보"
+        "anchor": "mice",
+        "title": "비즈니스 행사 기획·운영",
+        "desc": "기관과 기업의 컨퍼런스, 로드쇼, 세미나를 기획부터 운영, 결과 보고까지 맡습니다.",
+        "cases": [
+          "ENVEX 한중기술협력 교류회",
+          "신재생에너지 ODA 특강"
+        ]
       },
       {
-        "en": "Trade Agency",
-        "title": "무역 대행",
-        "desc": "전시회, 수출마케팅 참가사 대상 바이어 발굴·매칭, 시장조사, 수출계약까지 체계적이고 지속적인 수출업무 대행을 지원합니다. *온라인 채널 구축을 통한 수출업무 DX화 추진 예정"
+        "anchor": "trade",
+        "title": "무역대행",
+        "desc": "시장 조사부터 수출 계약 체결, 선적까지 수출 실무를 대신 처리합니다.",
+        "cases": []
       }
-    ],
-    "cta": "View All Solutions"
+    ]
   },
   "network": {
-    "eyebrow": "Global Network",
-    "titleLead": "더 나은 서비스를 향한",
-    "titleHighlight": "강력한 네트워크",
-    "descLead": "중국, 동남아, 러시아, 인도, 미주 지역본부 보유 및",
-    "descTail": "해외 주요마켓 마케팅 전문사와의 강력한 네트워크를 통해 더 나은 서비스를 지향합니다.",
-    "mapAlt": "마켓발란스 글로벌 네트워크 지도: 미국, 독일, 중동, 인도, 중국, 동남아시아, 호주",
-    "regionsLabel": "주요 거점",
-    "regions": ["미국", "독일", "중동", "인도", "중국", "동남아시아", "호주"]
-  },
-  "banner": {
-    "eyebrow": "Ready to Scale",
-    "titleLead": "글로벌 시장의",
-    "titleHighlight": "압도적 표준",
-    "titleTail": "을",
-    "titleLine2": "마켓발란스와 함께 하세요.",
-    "desc": "축적된 데이터와 전문 인력을 통해 귀사의 성공적인 해외 진출을 위한 가교 역할을 성실히 수행하겠습니다."
+    "title": "해외 네트워크",
+    "intro": "중국, 동남아, 러시아, 인도, 미주에 지역 거점을 두고 각 시장의 마케팅 전문 회사와 함께 일합니다.",
+    "mapAlt": "마켓발란스 해외 네트워크 지도: 미국, 독일, 중동, 인도, 중국, 동남아시아, 호주",
+    "regions": [
+      {
+        "name": "아시아",
+        "countries": "중국, 홍콩, 싱가포르, 베트남, 태국, 대만, 인도"
+      },
+      {
+        "name": "유럽",
+        "countries": "독일, 체코, 헝가리"
+      },
+      {
+        "name": "중동",
+        "countries": "UAE, 튀르키예"
+      },
+      {
+        "name": "CIS",
+        "countries": "러시아"
+      },
+      {
+        "name": "북미",
+        "countries": "미국"
+      },
+      {
+        "name": "오세아니아",
+        "countries": "호주"
+      }
+    ]
   }
 }

@@ -1,102 +1,141 @@
 {
   "meta": {
-    "title": "Global Business Partner",
-    "description": "Market Balance Co., Ltd. is a global partner for overseas exhibitions, export marketing, buyer sourcing and business event planning."
+    "title": "Overseas exhibitions & export services",
+    "description": "Market Balance runs overseas trade fair participation, buyer sourcing and matching, and export marketing for Korean SMEs — from planning to contract."
   },
   "hero": {
-    "eyebrow": "International Trade Consulting Group",
-    "titleLine1": "Balanced Success",
-    "titleLead": "in the",
-    "titleHighlight": "Global Market",
-    "descLines": [
-      "Your overseas marketing partner, backed by experts in Korea and abroad.",
-      "From exhibitions to buyer sourcing and export marketing,",
-      "we stay with you from planning and execution to results."
-    ],
-    "ctaServices": "Explore Services",
-    "ctaContact": "Contact Us"
+    "titleLine1": "From overseas trade fairs",
+    "titleLine2": "to signed buyer contracts.",
+    "lead": "Led by a CEO with 22 years in export marketing and exhibitions, and partners in more than 20 countries, we take care of fair selection, booth operations, buyer meetings and contracts.",
+    "primary": "Request a consultation",
+    "secondary": "See our track record"
   },
-  "strengths": {
-    "eyebrow": "About Market Balance",
-    "titleLead": "An",
-    "titleHighlight": "export marketing",
-    "titleTail": "partner proven by results",
-    "srTitle": "Capabilities and strengths",
-    "descLead": "Market Balance brings together professionals with real field experience in Korea and abroad",
-    "descTail": "to deliver the most balanced strategy for successful overseas expansion.",
-    "items": [
+  "board": {
+    "title": "Projects delivered in 2025",
+    "all": "See all 12",
+    "columns": {
+      "place": "Where",
+      "project": "Project",
+      "client": "Client"
+    },
+    "rows": [
       {
-        "en": "Industry Experience",
-        "title": "22 Years in the Industry",
-        "sub": "Our CEO's seasoned expertise in\nexport marketing and exhibitions"
+        "id": 3,
+        "place": "Shanghai",
+        "project": "Marketing consulting for Korea Pavilion exhibitors at IE expo China",
+        "client": "Korea Environment Preservation Association"
       },
       {
-        "en": "Global Network",
-        "title": "Partners in 20 Countries",
-        "sub": "Partner firms in key markets worldwide\nwith on-the-ground local support"
+        "id": 5,
+        "place": "Munich",
+        "project": "Buyer meetings at the renewable energy joint pavilion, Intersolar Europe",
+        "client": "Korea New & Renewable Energy Association"
       },
       {
-        "en": "Managed Projects",
-        "title": "20+ Projects a Year",
-        "sub": "Reliable planning and operation of\nlarge national online and offline events"
+        "id": 9,
+        "place": "Indonesia",
+        "project": "Renewable energy market development mission to Southeast Asia",
+        "client": "Korea Energy Agency and 1 other"
       },
       {
-        "en": "Professional Workforce",
-        "title": "Specialists in Every Field",
-        "sub": "10+ years of hands-on experience\nand a dedicated team at all times"
+        "id": 8,
+        "place": "Shanghai",
+        "project": "4th trade mission",
+        "client": "Jeonbuk State Business Promotion Agency"
+      },
+      {
+        "id": 6,
+        "place": "China",
+        "project": "7th Korea–China Export Fair and roadshow briefings",
+        "client": "Korea Environmental Industry Association"
+      },
+      {
+        "id": 2,
+        "place": "Korea",
+        "project": "Meetings with invited overseas buyers at the 1st Korea Industrial Complex Export Fair",
+        "client": "Korea Industrial Complex Corporation and 1 other"
       }
-    ],
-    "cta": "View Strategy"
+    ]
   },
   "services": {
-    "eyebrow": "Our Expertise",
-    "titleLead": "For successful global business,",
-    "titleHighlight": "integrated support solutions",
+    "title": "What we do",
+    "intro": "Five services for going overseas. Use one, or hand us the whole project.",
+    "casesLabel": "Examples",
+    "more": "Learn more",
     "items": [
       {
-        "en": "Overseas Exhibition",
-        "title": "Overseas Exhibition Support",
-        "desc": "We support Korean companies through every step of exhibiting overseas — booth rental, stand construction, logistics and exhibition marketing — plus links to government support programs and national pavilion organization, all tailored to you."
+        "anchor": "exhibition",
+        "title": "Overseas exhibition support",
+        "desc": "We choose the right fair, handle booth rental, stand building and shipping, and run the booth on site. We also connect you to government support programmes and organise Korea pavilions.",
+        "cases": [
+          "IE expo China Korea Pavilion",
+          "Intersolar Europe joint pavilion"
+        ]
       },
       {
-        "en": "Buyer Matching",
-        "title": "Buyer Sourcing & Matching",
-        "desc": "Systematic, ongoing export support for exhibitors and export-marketing participants, from buyer sourcing and matching to market research and export contracts."
+        "anchor": "buyer",
+        "title": "Buyer sourcing & matching",
+        "desc": "We find buyers from our industry database, confirm their demand in advance, then support one-to-one meetings, interpreting and follow-up contracts.",
+        "cases": [
+          "Advanced Materials Week buyer meetings",
+          "Korea Industrial Complex Export Fair"
+        ]
       },
       {
-        "en": "Export Marketing",
-        "title": "SME Export Marketing",
-        "desc": "Marketing that strengthens the global competitiveness of SMEs, including the digital transformation (DX) of export operations through online channels."
+        "anchor": "marketing",
+        "title": "SME export marketing",
+        "desc": "Market research and entry strategy, export meetings, trade missions and online B2B promotion to open new overseas sales channels.",
+        "cases": [
+          "Shanghai trade mission",
+          "Indonesia market development mission"
+        ]
       },
       {
-        "en": "Business Event Management",
-        "title": "Business Event Planning & Operation",
-        "desc": "End-to-end support for conferences, roadshows, seminars and corporate events for government bodies and companies in Korea and abroad — from planning and operation to follow-up. *Partnered with specialist Korean agencies when needed."
+        "anchor": "mice",
+        "title": "Business event planning",
+        "desc": "Conferences, roadshows and seminars for public bodies and companies, from planning and operations to the final report.",
+        "cases": [
+          "ENVEX Korea–China technology exchange",
+          "Renewable energy ODA lecture"
+        ]
       },
       {
-        "en": "Trade Agency",
-        "title": "Trade Agency",
-        "desc": "Systematic, ongoing export services for exhibitors and export-marketing participants, from buyer sourcing and matching to market research and export contracts. *DX of export operations through online channels is planned."
+        "anchor": "trade",
+        "title": "Trade agency",
+        "desc": "We handle export operations for you, from market research to signing the contract and shipping.",
+        "cases": []
       }
-    ],
-    "cta": "View All Solutions"
+    ]
   },
   "network": {
-    "eyebrow": "Global Network",
-    "titleLead": "Better service through",
-    "titleHighlight": "a strong network",
-    "descLead": "With regional headquarters in China, Southeast Asia, Russia, India and the Americas,",
-    "descTail": "and strong ties with marketing specialists in major overseas markets, we strive to serve you better.",
-    "mapAlt": "Market Balance global network map: USA, Germany, Middle East, India, China, Southeast Asia, Australia",
-    "regionsLabel": "Key regions",
-    "regions": ["USA", "Germany", "Middle East", "India", "China", "Southeast Asia", "Australia"]
-  },
-  "banner": {
-    "eyebrow": "Ready to Scale",
-    "titleLead": "Set the",
-    "titleHighlight": "global standard",
-    "titleTail": "",
-    "titleLine2": "with Market Balance.",
-    "desc": "With accumulated data and expert talent, we will faithfully serve as your bridge to successful overseas expansion."
+    "title": "Overseas network",
+    "intro": "We have regional bases in China, Southeast Asia, Russia, India and the Americas, and work with marketing specialists in each market.",
+    "mapAlt": "Market Balance overseas network map: USA, Germany, Middle East, India, China, Southeast Asia, Australia",
+    "regions": [
+      {
+        "name": "Asia",
+        "countries": "China, Hong Kong, Singapore, Vietnam, Thailand, Taiwan, India"
+      },
+      {
+        "name": "Europe",
+        "countries": "Germany, Czech Republic, Hungary"
+      },
+      {
+        "name": "Middle East",
+        "countries": "UAE, Türkiye"
+      },
+      {
+        "name": "CIS",
+        "countries": "Russia"
+      },
+      {
+        "name": "North America",
+        "countries": "USA"
+      },
+      {
+        "name": "Oceania",
+        "countries": "Australia"
+      }
+    ]
   }
 }
