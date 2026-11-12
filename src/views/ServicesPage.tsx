@@ -9,27 +9,26 @@ import Section from "@/components/ui/Section";
 import ContactBand from "@/components/ui/ContactBand";
 import TextLink from "@/components/ui/TextLink";
 import { cn } from "@/lib/cn";
-import { withBasePath } from "@/lib/basePath";
 
 /** Fixed header (72px) + sticky section nav (56px) + breathing room. */
 const STICKY_OFFSET = 144;
 
 /** One existing photo per service, in the same order as the dictionary's `services`. */
 const SERVICE_PHOTOS: Record<string, string> = {
-  exhibition: withBasePath("/image/main/m-4.jpg"),
-  buyer: withBasePath("/image/main/m-8.jpg"),
-  marketing: withBasePath("/image/main/m-6.jpg"),
-  mice: withBasePath("/image/main/m-5.jpg"),
-  trade: withBasePath("/image/main/m-7.jpg"),
+  exhibition: "/image/main/m-4.jpg",
+  buyer: "/image/main/m-8.jpg",
+  marketing: "/image/main/m-6.jpg",
+  mice: "/image/main/m-5.jpg",
+  trade: "/image/main/m-7.jpg",
 };
 
 const INDUSTRY_PHOTOS = [
-  withBasePath("/image/ser/s-1.jpg"),
-  withBasePath("/image/ser/s-2.jpg"),
-  withBasePath("/image/ser/s-3.jpg"),
-  withBasePath("/image/ser/s-4.jpg"),
-  withBasePath("/image/ser/s-5.jpg"),
-  withBasePath("/image/ser/s-6.jpg"),
+  "/image/ser/s-1.jpg",
+  "/image/ser/s-2.jpg",
+  "/image/ser/s-3.jpg",
+  "/image/ser/s-4.jpg",
+  "/image/ser/s-5.jpg",
+  "/image/ser/s-6.jpg",
 ];
 
 function SubHeading({ children }: { children: ReactNode }) {

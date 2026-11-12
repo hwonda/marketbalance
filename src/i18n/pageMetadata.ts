@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { hasLocale, locales } from "./config";
+import { hasLocale, localePath, locales } from "./config";
 import { getDictionary, type Dictionary } from "./dictionaries";
-import { withBasePath } from "@/lib/basePath";
 
 type PageNamespace = Exclude<keyof Dictionary, "metadata" | "nav" | "footer" | "cta" | "languageSwitcher" | "common">;
 
@@ -24,8 +23,8 @@ export async function pageMetadata(
     ...(meta?.title ? { title: `${meta.title} | ${dict.metadata.appName}` } : {}),
     ...(meta?.description ? { description: meta.description } : {}),
     alternates: {
-      canonical: withBasePath(`/${lang}${suffix}`),
-      languages: Object.fromEntries(locales.map((l) => [l, withBasePath(`/${l}${suffix}`)])),
+      canonical: localePath(lang, suffix),
+      languages: Object.fromEntries(locales.map((l) => [l, localePath(l, suffix)])),
     },
   };
 }

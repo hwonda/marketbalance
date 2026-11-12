@@ -24,7 +24,7 @@ import {
   type InquiryErrorCode,
   type InquiryField,
   type InquiryState,
-} from "@/app/[lang]/contact/actions";
+} from "@/app/(v2)/v2/[lang]/contact/actions";
 
 type InquiryTypeId = "exhibition" | "export" | "event" | "buyer" | "trade" | "other";
 

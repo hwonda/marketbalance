@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* The original site in src/v1 ships its own stylesheet. */
+@source not "../v1";
 
 /*
  * Market Balance design tokens.

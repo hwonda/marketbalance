@@ -10,7 +10,6 @@ import TextLink from "@/components/ui/TextLink";
 import { ButtonLink } from "@/components/ui/Button";
 import Waves from "@/components/ui/Waves";
 import { NetworkMap, type RegionKey } from "@/components/maps";
-import { withBasePath } from "@/lib/basePath";
 
 export default function HomePage() {
   const { home } = useDictionary();
@@ -37,7 +36,7 @@ export default function HomePage() {
           <div className="md:col-span-5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={withBasePath("/image/main/m-4.jpg")}
+              src={"/image/main/m-4.jpg"}
               alt={hero.imageAlt}
               className="aspect-[16/10] w-full rounded-lg object-cover md:aspect-[4/5]"
               fetchPriority="high"

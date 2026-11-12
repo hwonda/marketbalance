@@ -1,5 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { defaultLocale, getPathLocale, hasLocale, LOCALE_COOKIE, type Locale } from "@/i18n/config";
+import { defaultLocale, hasLocale, LOCALE_COOKIE, type Locale } from "@/i18n/config";
+
+/**
+ * Two versions share this app: the original site at /ko, /en (src/v1) and the redesign at /v2/ko, /v2/en.
+ * Any URL without a locale gets one, inside the version it belongs to: /about -> /ko/about, /v2 -> /v2/ko.
+ */
+const V2 = "/v2";
 
 /** Explicit choice (cookie) wins, then the browser's Accept-Language, then the default. */
 function pickLocale(request: NextRequest): Locale {
@@ -19,15 +25,16 @@ function pickLocale(request: NextRequest): Locale {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  if (getPathLocale(pathname)) return;
+  const inV2 = pathname === V2 || pathname.startsWith(`${V2}/`);
+  const rest = inV2 ? pathname.slice(V2.length) || "/" : pathname;
+  if (hasLocale(rest.split("/")[1] ?? "")) return;
 
   const url = request.nextUrl.clone();
-  url.pathname = `/${pickLocale(request)}${pathname === "/" ? "" : pathname}`;
+  url.pathname = `${inV2 ? V2 : ""}/${pickLocale(request)}${rest === "/" ? "" : rest}`;
   return NextResponse.redirect(url);
 }
 
 export const config = {
   // Skip Next internals and anything with a file extension (images, favicon, brochure.pdf...).
-  // "/" is listed on its own so the bare base path (e.g. /v2) is also redirected to a locale.
   matcher: ["/", "/((?!_next|.*\\..*).*)"],
 };
