@@ -1,82 +1,65 @@
 {
   "meta": {
-    "title": "Contact & Location",
-    "description": "Find Market Balance's address, contact details, company information and brochure."
+    "title": "Location",
+    "description": "Find Market Balance's location, directions, contact details and company information."
   },
-  "hero": {
-    "ariaLabel": "Page header",
-    "eyebrow": "Connect with us",
-    "titleLine1": "Contact",
-    "titleLine2": "Balance.",
-    "introLine1": "On your way beyond borders into global markets,",
-    "introLine2": "Market Balance will be the partner you can count on."
-  },
-  "breadcrumb": {
-    "ariaLabel": "Breadcrumb",
-    "current": "Contact"
-  },
-  "companyInfo": {
-    "eyebrow": "Company Info",
-    "title": "Location & Company Information",
-    "cards": {
-      "company": {
-        "label": "Company",
-        "value": "Market Balance Co., Ltd.",
-        "sub": "마켓발란스(주)"
-      },
-      "ceo": {
-        "label": "CEO",
-        "value": "Lee Su Yeon",
-        "sub": "Chief Executive Officer"
-      },
-      "registration": {
-        "label": "Company Details",
-        "value": "Founded: October 2024",
-        "sub": "Business Reg. No. 521-88-03439"
-      },
-      "phone": {
-        "label": "Phone",
-        "value": "031-425-9281",
-        "sub": "Mobile: 010-8838-9281"
-      },
-      "email": {
-        "label": "Email",
-        "value": "marketbalancekorea@gmail.com",
-        "sub": "Official Contact"
-      },
-      "address": {
-        "label": "Address",
-        "value": "398 Simin-daero, Dongan-gu, Anyang",
-        "sub": "#911, The Live D-Haute"
-      }
-    }
+  "intro": {
+    "title": "Location",
+    "lead": "We are at #911, The Live D-Haute, about a 10-minute walk from Indeogwon Station exit 4."
   },
   "location": {
-    "mapAlt": "Map to Market Balance — The Live D-Haute near Indeogwon Station",
-    "mapCaption": "Location Map.",
+    "title": "Location & directions",
+    "map": {
+      "officeName": "Market Balance Co., Ltd.",
+      "officeDetail": "#911, The Live D-Haute",
+      "stationLabel": "Indeogwon Station exit 4",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "gestureHint": "Hold Ctrl (⌘ on Mac) while scrolling to zoom. On a phone, move the map with two fingers.",
+      "ariaLabel": "Map of Market Balance's location"
+    },
     "addressLabel": "Address",
-    "addressLine": "#911, 398 Simin-daero, Dongan-gu, Anyang-si, Gyeonggi-do",
-    "addressDetail": "(Pyeongchon-dong, The Live D-Haute, Indeogwon Station)",
-    "transitLabel": "Public Transit",
-    "transitStation": "Indeogwon Station, Exit 4",
-    "transitWalk": "(10 min walk)"
+    "address": "#911, 398 Simin-daero, Dongan-gu, Anyang-si, Gyeonggi-do",
+    "addressDetail": "Pyeongchon-dong, The Live D-Haute, Indeogwon Station",
+    "transitLabel": "Public transport",
+    "transit": "About a 10-minute walk from Indeogwon Station exit 4",
+    "phoneLabel": "Phone",
+    "naverMap": "Open in Naver Map",
+    "otherMap": "Open in Google Maps",
+    "newTab": "(opens in a new tab)",
+    "naverQuery": "경기도 안양시 동안구 시민대로 398"
+  },
+  "company": {
+    "title": "Company information",
+    "rows": [
+      {
+        "label": "Company",
+        "value": "Market Balance Co., Ltd."
+      },
+      {
+        "label": "Korean name",
+        "value": "마켓발란스㈜"
+      },
+      {
+        "label": "CEO",
+        "value": "Lee Su Yeon"
+      },
+      {
+        "label": "Founded",
+        "value": "October 2024"
+      },
+      {
+        "label": "Business reg. no.",
+        "value": "521-88-03439"
+      }
+    ],
+    "emailLabel": "Email"
   },
   "brochure": {
-    "eyebrow": "Resource Download",
-    "badge": "Market Balance Brochure",
-    "title": "Download Our Brochure",
-    "description": "See Market Balance's solutions and our track record of successful global projects.",
-    "kicker": "Resource Center",
-    "download": "Download PDF",
-    "unavailableKicker": "Coming Soon",
-    "unavailable": "Not available yet"
-  },
-  "cta": {
-    "highlight": "Get in Touch",
-    "titleLead": "Take the",
-    "titleHighlight": "first step",
-    "titleAfterHighlight": " into global markets — ",
-    "titleTail": "talk to us today.",
-    "description": "If you have any questions or need a consultation, feel free to reach out anytime."
+    "title": "Company brochure",
+    "readyText": "Download our brochure for an overview of our services and recent projects.",
+    "download": "Download the brochure (PDF)",
+    "pendingText": "Our brochure is being prepared. If you have questions about our services or how we work, request a consultation.",
+    "pendingAction": "Request a consultation"
   }
 }
