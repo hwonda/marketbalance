@@ -8,6 +8,7 @@ import Section from "@/components/ui/Section";
 import ContactBand from "@/components/ui/ContactBand";
 import TextLink from "@/components/ui/TextLink";
 import { ButtonLink } from "@/components/ui/Button";
+import Waves from "@/components/ui/Waves";
 import { NetworkMap, type RegionKey } from "@/components/maps";
 
 export default function HomePage() {
@@ -16,25 +17,37 @@ export default function HomePage() {
 
   return (
     <MotionConfig reducedMotion="user">
-      {/* Hero: plain statement of what the company does, then proof. */}
-      <section className="bg-paper pt-32 pb-14 md:pt-40 md:pb-20">
-        <Container>
-          <h1 className="text-[2.25rem] leading-[1.2] font-extrabold tracking-[-0.03em] md:text-display md:leading-[1.15]">
-            <span className="block">{hero.titleLine1}</span>
-            <span className="block">{hero.titleLine2}</span>
-          </h1>
-          <p className="mt-6 max-w-[44ch] text-lead leading-relaxed text-ink-soft">{hero.lead}</p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="/contact">{hero.primary}</ButtonLink>
-            <ButtonLink href="/works" variant="secondary">
-              {hero.secondary}
-            </ButtonLink>
+      {/* Hero: plain statement of what the company does, a real exhibition photo, then proof. */}
+      <section className="bg-paper pt-28 md:pt-36">
+        <Container className="grid items-center gap-10 md:grid-cols-12 md:gap-12">
+          <div className="md:col-span-7">
+            <h1 className="text-[2.25rem] leading-[1.2] font-extrabold tracking-[-0.03em] md:text-[3.25rem] lg:text-display lg:leading-[1.15]">
+              <span className="block">{hero.titleLine1}</span>
+              <span className="block">{hero.titleLine2}</span>
+            </h1>
+            <p className="mt-6 max-w-[44ch] text-lead leading-relaxed text-ink-soft">{hero.lead}</p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <ButtonLink href="/contact">{hero.primary}</ButtonLink>
+              <ButtonLink href="/works" variant="secondary">
+                {hero.secondary}
+              </ButtonLink>
+            </div>
+          </div>
+          <div className="md:col-span-5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/image/main/m-4.jpg"
+              alt={hero.imageAlt}
+              className="aspect-[16/10] w-full rounded-lg object-cover md:aspect-[4/5]"
+              fetchPriority="high"
+            />
           </div>
         </Container>
+        <Waves className="mt-12 md:mt-16" />
       </section>
 
       {/* The one bold element: a directory board of real projects, like the listing at a fair entrance. */}
-      <section aria-labelledby="board-title" className="bg-blue-deep py-14 text-white md:py-20">
+      <section aria-labelledby="board-title" className="-mt-px bg-blue-deep pt-6 pb-14 text-white md:pt-8 md:pb-20">
         <Container>
           <div className="flex items-baseline justify-between gap-6">
             <h2 id="board-title" className="text-h4 font-bold md:text-h3">
